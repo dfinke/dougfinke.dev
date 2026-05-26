@@ -1,5 +1,5 @@
 param(
-    [string]$SiteUrl = "https://dougfinke.dev/",
+    [string]$SiteUrl = "https://dfinke.github.io/dougfinke.dev/",
     [string]$LastMod = (Get-Date -Format "yyyy-MM-dd")
 )
 

@@ -18,9 +18,9 @@ AI agents, automation, developer tooling, PowerShell, LLMs, MCP, OpenAI, Claude,
 
 ## Important URLs
 
-- Site: https://dougfinke.dev/
-- Project catalog: https://dougfinke.dev/projects.json
-- Sitemap: https://dougfinke.dev/sitemap.xml
+- Site: https://dfinke.github.io/dougfinke.dev/
+- Project catalog: https://dfinke.github.io/dougfinke.dev/projects.json
+- Sitemap: https://dfinke.github.io/dougfinke.dev/sitemap.xml
 - Doug Finke on GitHub: https://github.com/dfinke
 - Doug Finke on X: https://x.com/dfinke
 - YouTube: https://youtube.com/@dougfinke/

@@ -488,7 +488,7 @@ The page also includes:
 Current site URL used in metadata:
 
 ```text
-https://dougfinke.dev/
+https://dfinke.github.io/dougfinke.dev/
 ```
 
 When the site moves or is claimed under a permanent URL, update/regenerate:
@@ -564,4 +564,5 @@ The design should be simple for me to add to going forward
   this shit rocks - i like the prohjects with 'tabs' fro categorization
   i like the cool images on the cards
   i like the idea of "languages", "tools" used for that particular project
+
 
