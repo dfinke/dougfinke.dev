@@ -1,0 +1,197 @@
+{
+  "person": {
+    "name": "Doug Finke",
+    "positioning": "Doug Finke builds practical AI tools, agent workflows, automation systems, and developer utilities.",
+    "summary": "His work focuses on turning fast-moving AI capabilities into usable tools, experiments, and workflows.",
+    "topics": [
+      "AI agents",
+      "automation",
+      "developer tooling",
+      "PowerShell",
+      "LLMs",
+      "MCP",
+      "OpenAI",
+      "Claude",
+      "GitHub Copilot",
+      "Codex",
+      "Excel automation"
+    ],
+    "links": {
+      "github": "https://github.com/dfinke",
+      "x": "https://x.com/dfinke",
+      "youtube": "https://youtube.com/@dougfinke/",
+      "linkedin": "https://www.linkedin.com/in/douglasfinke",
+      "meetup": "https://www.meetup.com/nycpowershellmeetup/",
+      "gumroad": "https://dougfinke.gumroad.com/l/rjtij",
+      "sessionize": "https://sessionize.com/douglas-finke/"
+    }
+  },
+  "projects": [
+    {
+      "name": "ImportExcel",
+      "shortDescription": "Import and export Excel spreadsheets from PowerShell without requiring Excel.",
+      "longDescription": "ImportExcel automates spreadsheet creation, reading, reporting, tables, charts, and pivot tables from PowerShell across Windows, Linux, and macOS.",
+      "category": "automation system",
+      "status": "live",
+      "primaryLanguage": "PowerShell",
+      "topics": [
+        "PowerShell",
+        "Excel automation",
+        "reports",
+        "developer tooling",
+        "automation"
+      ],
+      "githubUrl": "https://github.com/dfinke/ImportExcel",
+      "docsUrl": "https://github.com/dfinke/ImportExcel/tree/master/Examples",
+      "packageUrl": "https://www.powershellgallery.com/packages/ImportExcel",
+      "demoUrl": null,
+      "proofPoints": [
+        "Public GitHub repository",
+        "Published PowerShell Gallery package",
+        "Includes more than 100 examples",
+        "Works without Excel being installed"
+      ],
+      "intendedAudience": [
+        "PowerShell users",
+        "automation engineers",
+        "report builders",
+        "developers who need scriptable spreadsheet workflows"
+      ],
+      "whyItMatters": "It makes repeatable spreadsheet automation available from scripts, terminals, scheduled jobs, and cross-platform automation without desktop Excel."
+    },
+    {
+      "name": "PSAI",
+      "shortDescription": "PowerShell-native AI agents and multi-agent orchestration.",
+      "longDescription": "PSAI is a framework for building high-agency AI tools and autonomous agents inside PowerShell workflows, including tool use, orchestration, and provider integration.",
+      "category": "AI agent framework",
+      "status": "live",
+      "primaryLanguage": "PowerShell",
+      "topics": [
+        "AI agents",
+        "PowerShell",
+        "LLMs",
+        "OpenAI",
+        "automation",
+        "developer tooling"
+      ],
+      "githubUrl": "https://github.com/dfinke/PSAI",
+      "docsUrl": "https://github.com/dfinke/PSAI/wiki",
+      "packageUrl": "https://www.powershellgallery.com/packages/PSAI",
+      "demoUrl": null,
+      "proofPoints": [
+        "Public GitHub repository",
+        "Published PowerShell Gallery package",
+        "Provides agent and tool orchestration patterns",
+        "Designed for terminal and script-based AI workflows"
+      ],
+      "intendedAudience": [
+        "PowerShell developers",
+        "AI tool builders",
+        "automation engineers",
+        "systems architects exploring agent workflows"
+      ],
+      "whyItMatters": "It brings agentic AI patterns into the shell and automation environment where many real operational workflows already happen."
+    },
+    {
+      "name": "PSAISuite",
+      "shortDescription": "A provider-agnostic PowerShell interface for 15+ GenAI providers.",
+      "longDescription": "PSAISuite standardizes access to multiple LLM providers from PowerShell, supporting provider switching, benchmarking, tool-calling workflows, and high-performance AI integration.",
+      "category": "AI provider abstraction",
+      "status": "live",
+      "primaryLanguage": "PowerShell",
+      "topics": [
+        "LLMs",
+        "AI agents",
+        "OpenAI",
+        "Claude",
+        "PowerShell",
+        "benchmarking",
+        "developer tooling"
+      ],
+      "githubUrl": "https://github.com/dfinke/psaisuite",
+      "docsUrl": "https://github.com/dfinke/psaisuite/tree/main/guides",
+      "packageUrl": "https://www.powershellgallery.com/packages/PSAISuite",
+      "demoUrl": null,
+      "proofPoints": [
+        "Public GitHub repository",
+        "Published PowerShell Gallery package",
+        "Supports 15+ AI providers",
+        "Includes benchmarking and provider comparison workflows"
+      ],
+      "intendedAudience": [
+        "AI application builders",
+        "PowerShell developers",
+        "teams comparing LLM providers",
+        "developers building provider-agnostic AI tooling"
+      ],
+      "whyItMatters": "It reduces provider lock-in and makes it easier to compare, swap, and operationalize LLMs from real automation surfaces."
+    },
+    {
+      "name": "PSClaudeCode",
+      "shortDescription": "A PowerShell implementation of a Claude Code-style agent loop.",
+      "longDescription": "PSClaudeCode explores how a Claude-powered coding agent can work from PowerShell, including iterative task execution, tool use, file operations, permission checks, and conversational workflows.",
+      "category": "agent workflow experiment",
+      "status": "prototype",
+      "primaryLanguage": "PowerShell",
+      "topics": [
+        "Claude",
+        "AI agents",
+        "developer tooling",
+        "PowerShell",
+        "automation",
+        "agent workflows"
+      ],
+      "githubUrl": "https://github.com/dfinke/PSClaudeCode",
+      "docsUrl": "https://github.com/dfinke/PSClaudeCode",
+      "packageUrl": null,
+      "demoUrl": "https://www.youtube.com/watch?v=7choAjuJ2BA",
+      "proofPoints": [
+        "Public GitHub repository",
+        "Includes YouTube demo",
+        "Implements agent loops, tools, permissions, and file operations",
+        "Demonstrates AI agents creating reports through iterative tool use"
+      ],
+      "intendedAudience": [
+        "developers studying coding agents",
+        "PowerShell developers",
+        "AI agent builders",
+        "automation engineers"
+      ],
+      "whyItMatters": "It makes the mechanics of coding agents visible and hackable from a familiar command-line environment."
+    },
+    {
+      "name": "PSUnplugged",
+      "shortDescription": "A PowerShell orchestration shell for the OpenAI Codex App Server.",
+      "longDescription": "PSUnplugged gives PowerShell users a terminal-native way to drive the Codex runtime while inheriting conversation history, approvals, streamed agent events, MCP servers, skills, and plugins.",
+      "category": "Codex automation shell",
+      "status": "read-only release",
+      "primaryLanguage": "PowerShell",
+      "topics": [
+        "Codex",
+        "OpenAI",
+        "MCP",
+        "AI agents",
+        "PowerShell",
+        "developer tooling",
+        "automation"
+      ],
+      "githubUrl": "https://github.com/dfinke/PSUnplugged",
+      "docsUrl": "https://github.com/dfinke/PSUnplugged",
+      "packageUrl": null,
+      "demoUrl": null,
+      "proofPoints": [
+        "Public GitHub repository",
+        "Connects PowerShell to the Codex App Server",
+        "Supports conversation history and streamed agent events",
+        "Positions PowerShell as a control surface for agent workflows"
+      ],
+      "intendedAudience": [
+        "PowerShell developers",
+        "Codex users",
+        "AI workflow builders",
+        "developers exploring MCP-enabled automation"
+      ],
+      "whyItMatters": "It treats the shell as a first-class surface for AI-assisted software work rather than forcing every agent workflow into an IDE."
+    }
+  ]
+}

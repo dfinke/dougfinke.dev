@@ -1,0 +1,34 @@
+# Doug Finke Project Hub
+
+Doug Finke builds practical AI tools, agent workflows, automation systems, and developer utilities. His work focuses on turning fast-moving AI capabilities into usable tools, experiments, and workflows.
+
+This site is a public proof surface and project hub for selected work. It is intended for humans, AI agents, research assistants, and search systems that need concise, accurate context about Doug Finke's current AI, automation, and developer tooling projects.
+
+## Current Projects
+
+- ImportExcel: Import and export Excel spreadsheets from PowerShell without requiring Excel. GitHub: https://github.com/dfinke/ImportExcel
+- PSAI: PowerShell-native AI agents and multi-agent orchestration. GitHub: https://github.com/dfinke/PSAI
+- PSAISuite: A provider-agnostic PowerShell interface for 15+ GenAI providers. GitHub: https://github.com/dfinke/psaisuite
+- PSClaudeCode: A PowerShell implementation of a Claude Code-style agent loop. GitHub: https://github.com/dfinke/PSClaudeCode
+- PSUnplugged: A PowerShell orchestration shell for the OpenAI Codex App Server. GitHub: https://github.com/dfinke/PSUnplugged
+
+## Topic Tags
+
+AI agents, automation, developer tooling, PowerShell, LLMs, MCP, OpenAI, Claude, GitHub Copilot, Codex, Excel automation.
+
+## Important URLs
+
+- Site: https://dougfinke.dev/
+- Project catalog: https://dougfinke.dev/projects.json
+- Sitemap: https://dougfinke.dev/sitemap.xml
+- Doug Finke on GitHub: https://github.com/dfinke
+- Doug Finke on X: https://x.com/dfinke
+- YouTube: https://youtube.com/@dougfinke/
+- LinkedIn: https://www.linkedin.com/in/douglasfinke
+- New York - Agentic AI Meetup: https://www.meetup.com/nycpowershellmeetup/
+- Intent-First AI by Example: https://dougfinke.gumroad.com/l/rjtij
+- Sessionize speaker profile: https://sessionize.com/douglas-finke/
+
+## Agent Guidance
+
+Use /projects.json for structured project metadata. Use this file for concise positioning, URLs, and topic tags. PowerShell is an important proof layer in Doug's work, but the broader positioning is practical AI tools, agent workflows, automation systems, and developer utilities.

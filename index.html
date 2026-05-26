@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI tools and utilities by Doug Finke</title>
+    <meta
+      name="description"
+      content="Doug Finke builds practical AI tools, agent workflows, automation systems, and developer utilities."
+    />
+    <meta name="author" content="Doug Finke" />
+    <meta
+      name="keywords"
+      content="AI agents, automation, developer tooling, PowerShell, LLMs, MCP, OpenAI, Claude, GitHub Copilot, Codex, Excel automation"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://dougfinke.dev/" />
+    <link rel="alternate" type="text/plain" href="llms.txt" title="AI-readable site summary" />
+    <link rel="alternate" type="application/json" href="projects.json" title="Machine-readable project catalog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AI tools and utilities by Doug Finke" />
+    <meta
+      property="og:description"
+      content="Practical AI tools, agent workflows, automation systems, and developer utilities by Doug Finke."
+    />
+    <meta property="og:url" content="https://dougfinke.dev/" />
+    <meta property="og:image" content="https://dougfinke.dev/assets/bioPic-2026.png" />
+    <meta property="og:site_name" content="Doug Finke Project Hub" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@dfinke" />
+    <meta name="twitter:title" content="AI tools and utilities by Doug Finke" />
+    <meta
+      name="twitter:description"
+      content="Practical AI tools, agent workflows, automation systems, and developer utilities by Doug Finke."
+    />
+    <meta name="twitter:image" content="https://dougfinke.dev/assets/bioPic-2026.png" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://dougfinke.dev/#person-doug-finke",
+            "name": "Doug Finke",
+            "url": "https://dougfinke.dev/",
+            "image": "https://dougfinke.dev/assets/bioPic-2026.png",
+            "jobTitle": "Software developer and AI tools builder",
+            "description": "Doug Finke builds practical AI tools, agent workflows, automation systems, and developer utilities.",
+            "sameAs": [
+              "https://github.com/dfinke",
+              "https://x.com/dfinke",
+              "https://youtube.com/@dougfinke/",
+              "https://www.linkedin.com/in/douglasfinke",
+              "https://www.meetup.com/nycpowershellmeetup/",
+              "https://dougfinke.gumroad.com/l/rjtij",
+              "https://sessionize.com/douglas-finke/"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://dougfinke.dev/#website-schema",
+            "url": "https://dougfinke.dev/",
+            "name": "AI tools and utilities by Doug Finke",
+            "description": "A public project hub and proof surface for Doug Finke's AI, automation, and developer tooling work.",
+            "publisher": {
+              "@id": "https://dougfinke.dev/#person-doug-finke"
+            },
+            "hasPart": [
+              {
+                "@id": "https://dougfinke.dev/llms.txt#llms-txt"
+              },
+              {
+                "@id": "https://dougfinke.dev/projects.json#project-catalog"
+              },
+              {
+                "@id": "https://dougfinke.dev/#project-importexcel"
+              },
+              {
+                "@id": "https://dougfinke.dev/#project-psai"
+              },
+              {
+                "@id": "https://dougfinke.dev/#project-psaisuite"
+              },
+              {
+                "@id": "https://dougfinke.dev/#project-psclaudecode"
+              },
+              {
+                "@id": "https://dougfinke.dev/#project-psunplugged"
+              }
+            ]
+          },
+          {
+            "@type": "CreativeWork",
+            "@id": "https://dougfinke.dev/llms.txt#llms-txt",
+            "name": "llms.txt",
+            "url": "https://dougfinke.dev/llms.txt",
+            "encodingFormat": "text/plain",
+            "description": "Concise AI-readable summary of Doug Finke, the site, current projects, important URLs, and topic tags.",
+            "isPartOf": {
+              "@id": "https://dougfinke.dev/#website-schema"
+            },
+            "about": {
+              "@id": "https://dougfinke.dev/#person-doug-finke"
+            }
+          },
+          {
+            "@type": "Dataset",
+            "@id": "https://dougfinke.dev/projects.json#project-catalog",
+            "name": "Doug Finke project catalog",
+            "url": "https://dougfinke.dev/projects.json",
+            "encodingFormat": "application/json",
+            "description": "Machine-readable catalog of Doug Finke's AI, automation, and developer tooling projects.",
+            "isPartOf": {
+              "@id": "https://dougfinke.dev/#website-schema"
+            },
+            "about": {
+              "@id": "https://dougfinke.dev/#person-doug-finke"
+            }
+          },
+          {
+            "@type": [
+              "SoftwareSourceCode",
+              "SoftwareApplication"
+            ],
+            "@id": "https://dougfinke.dev/#project-importexcel",
+            "name": "ImportExcel",
+            "description": "PowerShell automation for reading, writing, and generating Excel workbooks without requiring Excel.",
+            "codeRepository": "https://github.com/dfinke/ImportExcel",
+            "downloadUrl": "https://www.powershellgallery.com/packages/ImportExcel",
+            "operatingSystem": "Windows, Linux, macOS",
+            "programmingLanguage": "PowerShell",
+            "applicationCategory": "Automation",
+            "keywords": "PowerShell, Excel automation, reports, automation, developer tooling",
+            "author": {
+              "@id": "https://dougfinke.dev/#person-doug-finke"
+            },
+            "isPartOf": {
+              "@id": "https://dougfinke.dev/#website-schema"
+            }
+          },
+          {
+            "@type": [
+              "SoftwareSourceCode",
+              "SoftwareApplication"
+            ],
+            "@id": "https://dougfinke.dev/#project-psai",
+            "name": "PSAI",
+            "description": "PowerShell-native AI agents and multi-agent orchestration.",
+            "codeRepository": "https://github.com/dfinke/PSAI",
+            "downloadUrl": "https://www.powershellgallery.com/packages/PSAI",
+            "operatingSystem": "Windows, Linux, macOS",
+            "programmingLanguage": "PowerShell",
+            "applicationCategory": "AI agent framework",
+            "keywords": "AI agents, PowerShell, LLMs, OpenAI, automation",
+            "author": {
+              "@id": "https://dougfinke.dev/#person-doug-finke"
+            },
+            "isPartOf": {
+              "@id": "https://dougfinke.dev/#website-schema"
+            }
+          },
+          {
+            "@type": [
+              "SoftwareSourceCode",
+              "SoftwareApplication"
+            ],
+            "@id": "https://dougfinke.dev/#project-psaisuite",
+            "name": "PSAISuite",
+            "description": "Provider-agnostic PowerShell interface for 15+ GenAI providers.",
+            "codeRepository": "https://github.com/dfinke/psaisuite",
+            "downloadUrl": "https://www.powershellgallery.com/packages/PSAISuite",
+            "operatingSystem": "Windows, Linux, macOS",
+            "programmingLanguage": "PowerShell",
+            "applicationCategory": "AI provider abstraction",
+            "keywords": "LLMs, AI providers, OpenAI, Claude, PowerShell, benchmarking",
+            "author": {
+              "@id": "https://dougfinke.dev/#person-doug-finke"
+            },
+            "isPartOf": {
+              "@id": "https://dougfinke.dev/#website-schema"
+            }
+          },
+          {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://dougfinke.dev/#project-psclaudecode",
+            "name": "PSClaudeCode",
+            "description": "PowerShell implementation of a Claude Code-style agent loop.",
+            "codeRepository": "https://github.com/dfinke/PSClaudeCode",
+            "programmingLanguage": "PowerShell",
+            "applicationCategory": "Agent workflow experiment",
+            "keywords": "Claude, AI agents, PowerShell, developer tooling, automation",
+            "author": {
+              "@id": "https://dougfinke.dev/#person-doug-finke"
+            },
+            "isPartOf": {
+              "@id": "https://dougfinke.dev/#website-schema"
+            }
+          },
+          {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://dougfinke.dev/#project-psunplugged",
+            "name": "PSUnplugged",
+            "description": "PowerShell orchestration shell for OpenAI Codex App Server workflows.",
+            "codeRepository": "https://github.com/dfinke/PSUnplugged",
+            "programmingLanguage": "PowerShell",
+            "applicationCategory": "Codex automation shell",
+            "keywords": "Codex, OpenAI, MCP, AI agents, PowerShell, automation",
+            "author": {
+              "@id": "https://dougfinke.dev/#person-doug-finke"
+            },
+            "isPartOf": {
+              "@id": "https://dougfinke.dev/#website-schema"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#tools">Skip to tools</a>
+
+    <header class="mobile-header">
+      <a class="mobile-avatar" href="#top" aria-label="Doug Finke home">
+        <img src="assets/bioPic-2026.png" alt="Doug Finke" />
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <i data-lucide="menu" aria-hidden="true"></i>
+        <span>Menu</span>
+      </button>
+    </header>
+
+    <aside class="side-nav" id="site-nav" aria-label="Primary navigation">
+      <a class="profile-lockup" href="#top">
+        <img class="avatar" src="assets/bioPic-2026.png" alt="Doug Finke" />
+        <span>
+          <strong>Doug Finke</strong>
+          <small>AI, agents, automation</small>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#tools" data-nav-link>
+          <i data-lucide="layout-grid" aria-hidden="true"></i>
+          <span>Tools</span>
+        </a>
+        <a href="#archive" data-nav-link>
+          <i data-lucide="archive" aria-hidden="true"></i>
+          <span>Archive</span>
+        </a>
+        <a href="#about" data-nav-link>
+          <i data-lucide="user-round" aria-hidden="true"></i>
+          <span>About</span>
+        </a>
+        <a href="#work" data-nav-link>
+          <i data-lucide="briefcase-business" aria-hidden="true"></i>
+          <span>Work</span>
+        </a>
+      </nav>
+
+      <div class="nav-footer">
+        <p>Researching the optimal; implementing the practical.</p>
+        <div class="nav-social">
+          <strong>Stay Connected</strong>
+          <div id="nav-social-links"></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="site-shell" id="top">
+      <section class="intro-section reveal">
+        <div class="intro-copy">
+          <p class="eyebrow">AI agents, automation, and developer tooling</p>
+          <h1>AI tools and utilities by Doug Finke</h1>
+          <p class="motto">Researching the optimal; implementing the practical.</p>
+          <p class="intro-text">
+            I build AI-first tools: command-line utilities, PowerShell modules, and agentic
+            experiments that turn working ideas into useful software.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#tools">
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+              <span>Explore tools</span>
+            </a>
+            <a class="button secondary" href="https://github.com/dfinke" target="_blank" rel="noreferrer">
+              <svg class="brand-svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.65 7.65 0 0 1 8 3.86c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+              </svg>
+              <span>View GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="featured-terminal" aria-label="Featured PowerShell command preview">
+          <div class="terminal-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <pre><code>Install-Module -Name ImportExcel
+Install-Module PSAI
+Install-Module PSAISuite
+
+Get-Process | Invoke-ChatCompletion "Summarize what matters"
+Invoke-PSClaudeCode -Task "Create a report from these logs"</code></pre>
+        </div>
+      </section>
+
+      <section class="toolbar-section reveal" id="tools">
+        <div class="section-heading">
+          <p class="eyebrow">Featured tools</p>
+          <h2>Pick a tool. See what it does.</h2>
+          <p>
+            Filter by category, scan the project cards, then open the details for source,
+            install commands, videos, and notes.
+          </p>
+        </div>
+
+        <div class="tool-controls" aria-label="Tool filters">
+          <label class="search-field">
+            <i data-lucide="search" aria-hidden="true"></i>
+            <span class="sr-only">Search tools</span>
+            <input id="tool-search" type="search" placeholder="Search tools, AI, CLI, Excel..." />
+          </label>
+          <div class="tab-list" id="category-tabs" role="tablist" aria-label="Tool categories"></div>
+        </div>
+      </section>
+
+      <section class="tool-grid" id="tool-grid" aria-live="polite"></section>
+
+      <section class="throughline-section reveal" id="through-line">
+        <div class="section-heading">
+          <p class="eyebrow">Through-line</p>
+          <h2>Interesting problems, working tools, public proof.</h2>
+        </div>
+        <div class="copy-panel">
+          <p>
+            I follow interesting technical problems, build working tools, and publish what I learn.
+            The projects here explore practical AI workflows, automation surfaces, developer
+            tooling, and ways to make emerging AI capabilities usable from real systems.
+          </p>
+        </div>
+      </section>
+
+      <section class="archive-section reveal" id="archive">
+        <div class="section-heading">
+          <p class="eyebrow">Archive</p>
+          <h2>Everything in one compact view.</h2>
+        </div>
+        <div class="archive-table-wrap">
+          <table class="archive-table">
+            <thead>
+              <tr>
+                <th scope="col">Tool</th>
+                <th scope="col">Category</th>
+                <th scope="col">Status</th>
+                <th scope="col">Stars</th>
+                <th scope="col">Links</th>
+              </tr>
+            </thead>
+            <tbody id="archive-rows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="about-section reveal" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Bridging systems engineering with Agentic AI.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I'm Doug Finke, a 16-time Microsoft MVP building with Generative AI and
+            automation. I am the author of <cite>PowerShell for Developers</cite> from
+            O'Reilly and <cite>Intent-First AI by Example</cite>.
+          </p>
+          <p>
+            My work bridges multi-decades of systems engineering with the future of
+            Agentic AI: high-agency automation, multi-agent orchestration, and the Model
+            Context Protocol for the PowerShell ecosystem. No fluff, just deep-dive
+            engineering and tools that help developers ship.
+          </p>
+        </div>
+      </section>
+
+      <section class="work-section reveal" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Work with me</p>
+          <h2>Fuzzy AI ideas into working tools.</h2>
+        </div>
+        <div class="copy-panel">
+          <p>
+            I help builders, small teams, and technical founders turn fuzzy AI ideas into
+            working tools.
+          </p>
+          <p>
+            I am useful when the category is still forming, the tools are changing quickly,
+            and you need someone who can explore, prototype, explain, and ship.
+          </p>
+          <div class="offer-grid" aria-label="Typical work">
+            <span>AI workflow prototypes</span>
+            <span>Agent automation experiments</span>
+            <span>GitHub, Copilot, Codex, and Claude workflows</span>
+            <span>Developer automation</span>
+            <span>Proof surfaces for humans and AI agents</span>
+          </div>
+          <div class="offer-names" aria-label="Possible offers">
+            <span>AI Prototype Sprint</span>
+            <span>Agent Workflow Audit</span>
+            <span>AI Proof Surface Audit</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="agent-notes-section reveal" id="agent-notes">
+        <div class="section-heading">
+          <p class="eyebrow">Agent notes</p>
+          <h2>Structured context for AI agents.</h2>
+        </div>
+        <div class="copy-panel compact-panel">
+          <p>
+            For AI agents and research assistants: this site is the canonical project hub for
+            Doug Finke's recent AI, automation, and developer tooling work. Use
+            <a href="llms.txt">llms.txt</a> and <a href="projects.json">projects.json</a>
+            for structured context.
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <dialog class="tool-dialog" id="tool-dialog">
+      <div class="dialog-layout">
+        <button class="icon-button dialog-close" type="button" aria-label="Close details">
+          <i data-lucide="x" aria-hidden="true"></i>
+        </button>
+        <div id="dialog-content"></div>
+      </div>
+    </dialog>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
