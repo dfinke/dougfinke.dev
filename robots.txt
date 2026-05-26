@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dfinke.github.io/dougfinke.dev/sitemap.xml
+Sitemap: https://dougfinke.dev/sitemap.xml
 
 # AI-readable context is available at /llms.txt and /projects.json.

@@ -488,7 +488,7 @@ The page also includes:
 Current site URL used in metadata:
 
 ```text
-https://dfinke.github.io/dougfinke.dev/
+https://dougfinke.dev/
 ```
 
 When the site moves or is claimed under a permanent URL, update/regenerate:
