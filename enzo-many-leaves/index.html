@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8e7b8">
+  <meta name="description" content="A little interactive story about being yourself and belonging together.">
+  <title>Enzo and the Many Leaves</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="book" aria-label="Enzo and the Many Leaves interactive story">
+    <header class="book-tools">
+      <button class="round-button restart-button" type="button" aria-label="Start the story again" title="Start again">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5.2 9A7.5 7.5 0 1 1 5 15.7M5.2 9V4.8M5.2 9h4.2"/></svg>
+      </button>
+      <div class="progress" aria-label="Story progress"></div>
+      <button class="round-button speak-button" type="button" aria-label="Read this page aloud" title="Read aloud">
+        <svg class="speaker-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 9v6h4l5 4V5L9 9H5Zm12.2-.8a5.3 5.3 0 0 1 0 7.6M19.5 5.9a8.5 8.5 0 0 1 0 12.2"/></svg>
+      </button>
+    </header>
+
+    <section class="story-stage" tabindex="0" aria-live="polite">
+      <div class="sky-speckles" aria-hidden="true"></div>
+      <svg class="story-art" viewBox="0 0 900 620" role="img" aria-labelledby="scene-title scene-description">
+        <title id="scene-title">A friendly tree on a sunny hill</title>
+        <desc id="scene-description">A tree grows more colorful leaves as Enzo moves through the story.</desc>
+        <defs>
+          <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="180%">
+            <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#554025" flood-opacity=".16"/>
+          </filter>
+          <radialGradient id="sun-glow">
+            <stop offset="0" stop-color="#fff3a6" stop-opacity=".95"/>
+            <stop offset="1" stop-color="#fff3a6" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="trunk-paint" x1="0" x2="1">
+            <stop stop-color="#95613d"/>
+            <stop offset=".55" stop-color="#b87b4d"/>
+            <stop offset="1" stop-color="#7d4c32"/>
+          </linearGradient>
+        </defs>
+
+        <circle class="sun-glow" cx="744" cy="104" r="105" fill="url(#sun-glow)"/>
+        <g class="sun" transform="translate(744 104)">
+          <g class="sun-rays" stroke="#efb84a" stroke-width="8" stroke-linecap="round">
+            <path d="M0-62v-24M0 62v24M-62 0h-24M62 0h24M-44-44l-17-17M44 44l17 17M44-44l17-17M-44 44l-17 17"/>
+          </g>
+          <circle r="49" fill="#ffd66b"/>
+          <circle cx="-15" cy="-5" r="4.5" fill="#6f5535"/>
+          <circle cx="15" cy="-5" r="4.5" fill="#6f5535"/>
+          <path d="M-15 14q15 15 30 0" fill="none" stroke="#6f5535" stroke-width="4" stroke-linecap="round"/>
+        </g>
+
+        <g class="cloud cloud-one" fill="#fffaf0">
+          <ellipse cx="124" cy="112" rx="67" ry="30"/><circle cx="91" cy="91" r="31"/><circle cx="137" cy="82" r="42"/><circle cx="173" cy="101" r="29"/>
+        </g>
+        <g class="cloud cloud-two" fill="#fffaf0">
+          <ellipse cx="690" cy="217" rx="52" ry="23"/><circle cx="663" cy="201" r="24"/><circle cx="703" cy="192" r="33"/><circle cx="732" cy="210" r="21"/>
+        </g>
+
+        <path class="back-hill" d="M0 474Q130 375 282 448Q420 325 568 431Q714 353 900 433V620H0Z" fill="#b9d887"/>
+        <path class="front-hill" d="M0 515Q212 421 423 523Q648 412 900 511V620H0Z" fill="#82b96c"/>
+        <path class="path" d="M453 620q-30-79 11-148q38 67 60 148Z" fill="#e9ce98" opacity=".8"/>
+
+        <g class="tree" filter="url(#soft-shadow)">
+          <path class="trunk" d="M410 494q23-87 15-167l-68-73l18-12l57 49q5-54 28-126l23 7q-12 54-10 105l56-58l18 17l-53 72q11 86 55 186Z" fill="url(#trunk-paint)"/>
+          <path d="M438 464q19-82 12-162" fill="none" stroke="#d69a69" stroke-width="7" stroke-linecap="round" opacity=".7"/>
+
+          <g class="leaf leaf-1" data-leaf="1" role="button" tabindex="0" aria-label="Wiggle the little green leaf" transform="translate(343 237) rotate(-30)">
+            <path d="M0 0C-53-46-95 2-67 46C-40 82 3 64 15 15Z" fill="#62a866"/>
+            <path d="M-58 37L2 8" stroke="#d8e9a8" stroke-width="5" stroke-linecap="round"/>
+          </g>
+          <g class="leaf leaf-2" data-leaf="2" role="button" tabindex="0" aria-label="Wiggle the golden leaf" transform="translate(491 210) rotate(19)">
+            <path d="M0 0C40-57 91-20 73 28C56 69 8 60-10 14Z" fill="#efb84a"/>
+            <path d="M62 20L1 7" stroke="#fff0a3" stroke-width="5" stroke-linecap="round"/>
+          </g>
+          <g class="leaf leaf-3" data-leaf="3" role="button" tabindex="0" aria-label="Wiggle the red leaf" transform="translate(402 151) rotate(-9)">
+            <path d="M0 0C-25-63-85-40-79 10C-72 57-23 68 10 14Z" fill="#db7258"/>
+            <path d="M-67 8L0 7" stroke="#f6c7a1" stroke-width="5" stroke-linecap="round"/>
+          </g>
+          <g class="leaf leaf-4" data-leaf="4" role="button" tabindex="0" aria-label="Wiggle the blue leaf" transform="translate(522 302) rotate(37)">
+            <path d="M0 0C48-46 94-3 69 42C44 78 4 61-13 13Z" fill="#5ba6a6"/>
+            <path d="M59 34L1 7" stroke="#c8eece" stroke-width="5" stroke-linecap="round"/>
+          </g>
+          <g class="leaf leaf-5" data-leaf="5" role="button" tabindex="0" aria-label="Wiggle the purple leaf" transform="translate(351 335) rotate(-51)">
+            <path d="M0 0C-45-52-91-13-71 34C-50 75-5 65 13 14Z" fill="#9a78ad"/>
+            <path d="M-60 28L0 7" stroke="#e4cce5" stroke-width="5" stroke-linecap="round"/>
+          </g>
+          <g class="leaf leaf-6 special-leaf" data-leaf="6" role="button" tabindex="0" aria-label="Wiggle Enzo's rainbow leaf" transform="translate(456 339) rotate(5)">
+            <path d="M0 0C37-57 88-24 73 25C59 70 12 65-11 14Z" fill="#ee8d65"/>
+            <path d="M61 18L1 7" stroke="#ffe2a8" stroke-width="5" stroke-linecap="round"/>
+            <circle class="leaf-heart" cx="33" cy="25" r="8" fill="#fff4d5"/>
+          </g>
+        </g>
+
+        <g class="child" transform="translate(236 438)" filter="url(#soft-shadow)">
+          <image class="enzo-photo-head" href="assets/enzo-head.png" x="-53" y="-120" width="106" height="100" preserveAspectRatio="xMidYMid meet"/>
+          <path d="M-35-17q35-23 70 0l12 65h-94Z" fill="#22344f"/>
+          <path d="M-5 2l4 9l10 1l-8 6l3 10l-9-5l-9 5l3-10l-8-6l10-1Z" fill="#f3e9ca" opacity=".92"/>
+          <path d="M-35-8l-39 39M35-8l43-35" stroke="#c9815d" stroke-width="15" stroke-linecap="round"/>
+          <path d="M-46 43q45 10 92 0l-4 29H4L0 55l-5 17h-37Z" fill="#adb5bb"/>
+          <path d="M-23 69l-7 40M23 69l11 40" stroke="#c9815d" stroke-width="16" stroke-linecap="round"/>
+          <path d="M-31 109q-6 6-13 4M34 109q7 6 14 2" fill="none" stroke="#c9815d" stroke-width="10" stroke-linecap="round"/>
+        </g>
+
+        <g class="sparkles" aria-hidden="true" fill="#fff7ba">
+          <path d="M253 187l7 17l17 7l-17 7l-7 17l-7-17l-17-7l17-7Z"/>
+          <path d="M604 143l5 13l13 5l-13 5l-5 13l-5-13l-13-5l13-5Z"/>
+          <path d="M635 334l8 20l20 8l-20 8l-8 20l-8-20l-20-8l20-8Z"/>
+        </g>
+      </svg>
+
+      <div class="words-card">
+        <p class="story-words"></p>
+        <p class="story-prompt" aria-live="polite"></p>
+      </div>
+      <p class="tap-hint">Tap to turn the page <span aria-hidden="true">&#8594;</span></p>
+    </section>
+
+    <nav class="page-controls" aria-label="Story navigation">
+      <button class="nav-button previous-button" type="button" aria-label="Previous page">
+        <span aria-hidden="true">&#8592;</span><span class="nav-label">Back</span>
+      </button>
+      <button class="nav-button next-button" type="button" aria-label="Next page">
+        <span class="nav-label">Next</span><span aria-hidden="true">&#8594;</span>
+      </button>
+    </nav>
+  </main>
+
+  <noscript>This little book needs JavaScript turned on to turn its pages.</noscript>
+  <script src="app.js"></script>
+</body>
+</html>
