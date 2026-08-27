@@ -154,30 +154,6 @@ window.TOOLS = [
       "automation"
     ],
     "featured": true
-  },
-  {
-    "name": "PSPandas",
-    "slug": "pspandas",
-    "category": "CLI",
-    "status": "Live",
-    "repo": "dfinke/PSPandas",
-    "stars": 0,
-    "forks": 0,
-    "language": "PowerShell",
-    "updated": "2026-08-11",
-    "oneLiner": "PowerShell-native data frames for filtering, grouping, joining, and analyzing objects.",
-    "description": "PowerShell-native data frames for filtering, grouping, joining, and analyzing objects.",
-    "image": "assets/project-placeholder.svg",
-    "imageAlt": "PSPandas project graphic",
-    "githubUrl": "https://github.com/dfinke/PSPandas",
-    "zipUrl": "https://github.com/dfinke/PSPandas/archive/refs/heads/main.zip",
-    "youtubeUrl": "",
-    "demoUrl": null,
-    "packageUrl": null,
-    "articleUrl": "",
-    "installCommand": "",
-    "tags": [],
-    "featured": false
   }
 ];
 
