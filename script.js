@@ -98,7 +98,11 @@
               <div class="card-actions">
                 <a class="button compact" href="${tool.githubUrl}" target="_blank" rel="noreferrer">
                   ${icon("github")}
-                  <span>Source</span>
+                  <span>GitHub</span>
+                </a>
+                <a class="button compact" href="${tool.zipUrl}" download>
+                  ${icon("download")}
+                  <span>Zip</span>
                 </a>
                 ${
                   tool.youtubeUrl
@@ -108,10 +112,14 @@
                       </a>`
                     : ""
                 }
-                <button class="button compact secondary" type="button" data-open-tool="${tool.slug}">
-                  ${icon("panel-right-open")}
-                  <span>Details</span>
-                </button>
+                ${
+                  tool.packageUrl || tool.youtubeUrl
+                    ? `<button class="button compact secondary" type="button" data-open-tool="${tool.slug}">
+                        ${icon("panel-right-open")}
+                        <span>Details</span>
+                      </button>`
+                    : ""
+                }
               </div>
             </div>
           </article>
@@ -148,6 +156,7 @@
               <div class="table-links">
                 <a href="${tool.githubUrl}" target="_blank" rel="noreferrer">Source</a>
                 ${tool.youtubeUrl ? `<a href="${tool.youtubeUrl}" target="_blank" rel="noreferrer">Video</a>` : ""}
+                <a href="${tool.zipUrl}" download>Zip</a>
               </div>
             </td>
           </tr>
@@ -201,6 +210,10 @@
             ${icon("github")}
             <span>GitHub</span>
           </a>
+          <a class="button secondary" href="${tool.zipUrl}" download>
+            ${icon("download")}
+            <span>Zip</span>
+          </a>
           ${
             tool.youtubeUrl
               ? `<a class="button secondary" href="${tool.youtubeUrl}" target="_blank" rel="noreferrer">
@@ -210,8 +223,8 @@
               : ""
           }
           ${
-            tool.demoUrl
-              ? `<a class="button secondary" href="${tool.demoUrl}" target="_blank" rel="noreferrer">
+            tool.packageUrl
+              ? `<a class="button secondary" href="${tool.packageUrl}" target="_blank" rel="noreferrer">
                   ${icon("external-link")}
                   <span>Package</span>
                 </a>`

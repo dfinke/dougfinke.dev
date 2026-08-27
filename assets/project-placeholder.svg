@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Project placeholder</title>
+  <desc id="desc">A generic project card graphic with a terminal prompt and grid.</desc>
+  <rect width="1200" height="675" fill="#151714"/>
+  <path d="M0 560h1200M0 450h1200M0 340h1200M0 230h1200M120 0v675M240 0v675M360 0v675M480 0v675M600 0v675M720 0v675M840 0v675M960 0v675M1080 0v675" stroke="#293029" stroke-width="2" opacity=".72"/>
+  <rect x="125" y="128" width="950" height="420" rx="22" fill="#20251f" stroke="#75816f" stroke-width="4"/>
+  <circle cx="170" cy="174" r="9" fill="#ee7952"/>
+  <circle cx="202" cy="174" r="9" fill="#e6b85c"/>
+  <circle cx="234" cy="174" r="9" fill="#8abf7b"/>
+  <path d="m210 300 72 58-72 58M332 416h210" fill="none" stroke="#d7e5cf" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+  <text x="210" y="485" fill="#8abf7b" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="34" letter-spacing="5">PROJECT / BUILD</text>
+</svg>
