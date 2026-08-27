@@ -29,6 +29,10 @@
   "projects": [
     {
       "name": "ImportExcel",
+      "image": "https://github.com/dfinke/ImportExcel/raw/refs/heads/master/images/SalesDataChart.png",
+      "imageAlt": "A generated Excel chart created by ImportExcel",
+      "installCommand": "Install-Module -Name ImportExcel",
+      "featured": true,
       "shortDescription": "Import and export Excel spreadsheets from PowerShell without requiring Excel.",
       "longDescription": "ImportExcel automates spreadsheet creation, reading, reporting, tables, charts, and pivot tables from PowerShell across Windows, Linux, and macOS.",
       "category": "automation system",
@@ -61,6 +65,10 @@
     },
     {
       "name": "PSAI",
+      "image": "https://github.com/dfinke/PSAI/raw/refs/heads/main/Media/PSAI.png",
+      "imageAlt": "PSAI project mark",
+      "installCommand": "Install-Module -Name PSAI",
+      "featured": true,
       "shortDescription": "PowerShell-native AI agents and multi-agent orchestration.",
       "longDescription": "PSAI is a framework for building high-agency AI tools and autonomous agents inside PowerShell workflows, including tool use, orchestration, and provider integration.",
       "category": "AI agent framework",
@@ -94,6 +102,10 @@
     },
     {
       "name": "PSAISuite",
+      "image": "https://github.com/dfinke/PSAISuite/raw/refs/heads/main/assets/InvokeChatCompletion.png",
+      "imageAlt": "PSAISuite command output",
+      "installCommand": "Install-Module PSAISuite",
+      "featured": true,
       "shortDescription": "A provider-agnostic PowerShell interface for 15+ GenAI providers.",
       "longDescription": "PSAISuite standardizes access to multiple LLM providers from PowerShell, supporting provider switching, benchmarking, tool-calling workflows, and high-performance AI integration.",
       "category": "AI provider abstraction",
@@ -128,6 +140,11 @@
     },
     {
       "name": "PSClaudeCode",
+      "image": "https://img.youtube.com/vi/7choAjuJ2BA/maxresdefault.jpg",
+      "imageAlt": "Claude Code built natively in PowerShell video thumbnail",
+      "youtubeUrl": "https://www.youtube.com/watch?v=7choAjuJ2BA",
+      "installCommand": "Import-Module .\\PSClaudeCode.psd1",
+      "featured": true,
       "shortDescription": "A PowerShell implementation of a Claude Code-style agent loop.",
       "longDescription": "PSClaudeCode explores how a Claude-powered coding agent can work from PowerShell, including iterative task execution, tool use, file operations, permission checks, and conversational workflows.",
       "category": "agent workflow experiment",
@@ -161,6 +178,11 @@
     },
     {
       "name": "PSUnplugged",
+      "image": "https://github.com/dfinke/PSUnplugged/raw/refs/heads/main/media/PSUnplugged.png",
+      "imageAlt": "PSUnplugged project graphic",
+      "articleUrl": "https://forms.gle/gvw8cU2pgFeXWMNZA",
+      "installCommand": "git clone https://github.com/dfinke/PSUnplugged",
+      "featured": true,
       "shortDescription": "A PowerShell orchestration shell for the OpenAI Codex App Server.",
       "longDescription": "PSUnplugged gives PowerShell users a terminal-native way to drive the Codex runtime while inheriting conversation history, approvals, streamed agent events, MCP servers, skills, and plugins.",
       "category": "Codex automation shell",

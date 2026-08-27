@@ -497,12 +497,9 @@ When the site moves or is claimed under a permanent URL, update/regenerate:
 .\Update-SiteMetadata.ps1 -SiteUrl "https://your-final-site.example/"
 ```
 
-When adding a new project, update:
+When adding a new project, add its `name` to `projects.json`. The build script derives missing display metadata from GitHub and PowerShell Gallery, uses a local placeholder image when no image is supplied, and regenerates `data.js`, `llms.txt`, `sitemap.xml`, and `robots.txt`.
 
-- `data.js` for visible cards.
-- `projects.json` for AI-readable project metadata.
-- `index.html` JSON-LD if the project should appear in structured page metadata.
-- Run `Update-SiteMetadata.ps1` to refresh `llms.txt`, `sitemap.xml`, and `robots.txt`.
+The GitHub Action runs when `projects.json` changes on `main`, once daily, or when manually dispatched. It commits regenerated files back to the branch. Hand-authored fields—including explicit `null` or empty values—are never replaced by derived values. GitHub and PowerShell Gallery failures fall back to safe defaults/placeholders so one incomplete project does not stop the build.
 
 Quick validation:
 
