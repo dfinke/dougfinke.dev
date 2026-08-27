@@ -201,7 +201,7 @@ function Get-ProjectRecord {
 
     $derivedDemoUrl = $null
     if (-not (Test-HasProperty -Object $Project -Name "demoUrl") -and -not (Test-HasProperty -Object $Project -Name "packageUrl")) {
-        $module = Find-PowerShellGalleryModule -Name $name
+        $module = @(Find-PowerShellGalleryModule -Name $name)
         if ($module.Count -gt 0) {
             $derivedDemoUrl = "https://www.powershellgallery.com/packages/$name"
         }
