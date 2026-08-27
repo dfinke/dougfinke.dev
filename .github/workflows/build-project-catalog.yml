@@ -1,0 +1,42 @@
+name: Build project catalog
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - projects.json
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: project-catalog-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Regenerate project catalog outputs
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: .\Update-SiteMetadata.ps1
+
+      - name: Commit generated files
+        shell: pwsh
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.js projects.json llms.txt sitemap.xml robots.txt assets/project-placeholder.svg
+          if (-not (git diff --cached --quiet)) {
+            git commit -m "chore: rebuild project catalog"
+            git push origin "HEAD:$env:GITHUB_REF_NAME"
+          }
