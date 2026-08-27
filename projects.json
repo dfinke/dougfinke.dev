@@ -192,6 +192,9 @@
         "developers exploring MCP-enabled automation"
       ],
       "whyItMatters": "It treats the shell as a first-class surface for AI-assisted software work rather than forcing every agent workflow into an IDE."
+    },
+    {
+      "name": "PSPandas"
     }
   ]
 }
