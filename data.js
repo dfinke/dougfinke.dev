@@ -164,7 +164,7 @@ window.TOOLS = [
     "stars": 0,
     "forks": 0,
     "language": "PowerShell",
-    "updated": "2026-08-11",
+    "updated": "2026-08-28",
     "oneLiner": "PowerShell-native data frames for filtering, grouping, joining, and analyzing objects.",
     "description": "PowerShell-native data frames for filtering, grouping, joining, and analyzing objects.",
     "image": "assets/project-placeholder.svg",
