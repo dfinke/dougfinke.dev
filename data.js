@@ -183,6 +183,12 @@ window.TOOLS = [
 
 window.SOCIAL_LINKS = [
   {
+    "label": "Join the Forge",
+    "url": "https://www.skool.com/agentic-ai-forge",
+    "icon": "flame",
+    "text": "Join the Agentic AI Forge community."
+  },
+  {
     "label": "X / Twitter",
     "url": "https://x.com/dfinke",
     "icon": "x-twitter",

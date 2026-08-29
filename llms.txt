@@ -29,6 +29,7 @@ AI agents, automation, developer tooling, PowerShell, LLMs, MCP, OpenAI, Claude,
 - New York - Agentic AI Meetup: https://www.meetup.com/nycpowershellmeetup/
 - Intent-First AI by Example: https://dougfinke.gumroad.com/l/rjtij
 - Sessionize speaker profile: https://sessionize.com/douglas-finke/
+- Join the Forge: https://www.skool.com/agentic-ai-forge
 
 ## Agent Guidance
 
