@@ -284,6 +284,7 @@ $ToolData = foreach ($Project in $ProjectRecords) {
 }
 
 $SocialLinkDefinitions = @(
+    @{ Key = "forge"; Label = "Join the Forge"; Icon = "flame"; Text = "Join the Agentic AI Forge community." },
     @{ Key = "x"; Label = "X / Twitter"; Icon = "x-twitter"; Text = "Short updates and build notes." },
     @{ Key = "youtube"; Label = "YouTube"; Icon = "youtube"; Text = "Walkthroughs, demos, and talks." },
     @{ Key = "meetup"; Label = "New York - Agentic AI"; Icon = "users-round"; Text = "Meetup sessions and community events." },
@@ -343,6 +344,7 @@ $TopicLine
 - New York - Agentic AI Meetup: $($Catalog.person.links.meetup)
 - Intent-First AI by Example: $($Catalog.person.links.gumroad)
 - Sessionize speaker profile: $($Catalog.person.links.sessionize)
+- Join the Forge: $($Catalog.person.links.forge)
 
 ## Agent Guidance
 
