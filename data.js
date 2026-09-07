@@ -69,7 +69,7 @@ window.TOOLS = [
     "stars": 91,
     "forks": 16,
     "language": "PowerShell",
-    "updated": "2026-09-01",
+    "updated": "2026-09-06",
     "oneLiner": "A provider-agnostic PowerShell interface for 15+ GenAI providers.",
     "description": "PSAISuite standardizes access to multiple LLM providers from PowerShell, supporting provider switching, benchmarking, tool-calling workflows, and high-performance AI integration.",
     "image": "https://github.com/dfinke/PSAISuite/raw/refs/heads/main/assets/InvokeChatCompletion.png",
