@@ -45,3 +45,10 @@
 .idea-lab-loop__steps small { display:block; margin-top:3px; color:var(--subtle); font-size:.74rem; line-height:1.35; }
 @media (max-width:900px) { .idea-lab-loop { grid-template-columns:1fr; } }
 @media (max-width:620px) { .idea-lab-loop__steps { grid-template-columns:repeat(2,1fr); } }
+
+.idea-lab-banner { padding:42px 0 34px; border-bottom:1px solid var(--line); }
+.idea-lab-banner img { display:block; width:100%; height:auto; border:1px solid var(--line-strong); background:var(--panel); box-shadow:var(--shadow); }
+.idea-lab-banner__copy { max-width:780px; padding-top:20px; }
+.idea-lab-banner__copy h2 { margin:0 0 13px; color:var(--text); font-size:clamp(1.8rem,3.5vw,2.7rem); letter-spacing:-.045em; line-height:1.02; }
+.idea-lab-banner__copy h2 span { color:var(--green); }
+.idea-lab-banner__copy p:not(.eyebrow) { margin:0; color:var(--muted); font-size:.98rem; line-height:1.6; }
