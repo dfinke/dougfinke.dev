@@ -35,7 +35,7 @@ window.TOOLS = [
     "category": "AI agent framework",
     "status": "live",
     "repo": "dfinke/PSAI",
-    "stars": 271,
+    "stars": 272,
     "forks": 36,
     "language": "PowerShell",
     "updated": "2026-03-22",
