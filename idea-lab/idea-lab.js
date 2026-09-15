@@ -19,4 +19,18 @@
     window.setTimeout(()=>{button.textContent=original;},1400);
   });
   if(window.lucide){window.lucide.createIcons();}
+  const revealItems = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    revealItems.forEach(function(item) { observer.observe(item); });
+  } else {
+    revealItems.forEach(function(item) { item.classList.add("is-visible"); });
+  }
 })();
