@@ -73,3 +73,16 @@
 .lab-card { color:inherit; text-decoration:none; }
 .lab-card:focus-visible { outline:2px solid var(--green); outline-offset:3px; }
 .lab-card__link { margin-top:auto; }
+
+.lab-filters { display:grid; gap:12px; margin:18px 0 20px; padding:14px; border:1px solid var(--line); background:var(--panel-soft); }
+.lab-search { display:grid; gap:6px; max-width:560px; color:var(--subtle); font-size:.72rem; font-weight:750; letter-spacing:.04em; text-transform:uppercase; }
+.lab-search input { width:100%; box-sizing:border-box; padding:10px 12px; border:1px solid var(--line-strong); border-radius:7px; color:var(--text); background:var(--panel); font: .86rem var(--font-sans); }
+.lab-search input::placeholder { color:var(--subtle); }
+.lab-search input:focus-visible { outline:2px solid var(--green); outline-offset:2px; border-color:var(--green); }
+.lab-filter-tags { display:flex; flex-wrap:wrap; gap:7px; }
+.lab-filter { padding:6px 10px; border:1px solid var(--line-strong); border-radius:999px; color:var(--muted); background:transparent; cursor:pointer; font-size:.74rem; font-weight:700; }
+.lab-filter:hover,.lab-filter:focus-visible,.lab-filter.is-active { border-color:var(--green); color:var(--text); background:#10271f; }
+.lab-filter:focus-visible { outline:2px solid var(--green); outline-offset:2px; }
+.lab-filter-status { margin:0; color:var(--subtle); font-size:.78rem; }
+.lab-card[hidden] { display:none; }
+.copy-button.is-copied { border-color:#286d55; color:#9ce6b9; background:#10271f; }
