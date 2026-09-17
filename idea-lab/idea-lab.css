@@ -54,3 +54,5 @@
 .idea-lab-banner__copy h2 { margin:0 0 13px; color:var(--text); font-size:clamp(1.8rem,3.5vw,2.7rem); letter-spacing:-.045em; line-height:1.02; }
 .idea-lab-banner__copy h2 span { color:var(--green); }
 .idea-lab-banner__copy p:not(.eyebrow) { margin:0; color:var(--muted); font-size:.98rem; line-height:1.6; }
+
+.lab-panel--prompt pre { white-space:pre-wrap; overflow-x:hidden; overflow-y:auto; overflow-wrap:anywhere; }
