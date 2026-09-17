@@ -56,3 +56,13 @@
 .idea-lab-banner__copy p:not(.eyebrow) { margin:0; color:var(--muted); font-size:.98rem; line-height:1.6; }
 
 .lab-panel--prompt pre { white-space:pre-wrap; overflow-x:hidden; overflow-y:auto; overflow-wrap:anywhere; }
+
+.validation-card { border:1px solid var(--line); background:#0b0e0c; }
+.validation-card__status { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:12px 14px; border-bottom:1px solid var(--line); color:var(--muted); font-size:.8rem; }
+.validation-card__status strong { padding:4px 9px; border:1px solid #286d55; border-radius:999px; color:#9ce6b9; background:#10271f; font-size:.7rem; letter-spacing:.04em; text-transform:uppercase; }
+.validation-card__facts { margin:0; }
+.validation-card__facts > div { display:grid; grid-template-columns:minmax(110px,.28fr) minmax(0,1fr); gap:16px; padding:11px 14px; border-bottom:1px solid var(--line); }
+.validation-card__facts > div:last-child { border-bottom:0; }
+.validation-card__facts dt { color:var(--subtle); font-size:.72rem; font-weight:750; letter-spacing:.04em; text-transform:uppercase; }
+.validation-card__facts dd { margin:0; color:var(--muted); font-size:.84rem; line-height:1.55; }
+.validation-card code { color:var(--green); font:600 .76rem var(--font-mono); }
