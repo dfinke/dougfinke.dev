@@ -66,3 +66,6 @@
 .validation-card__facts dt { color:var(--subtle); font-size:.72rem; font-weight:750; letter-spacing:.04em; text-transform:uppercase; }
 .validation-card__facts dd { margin:0; color:var(--muted); font-size:.84rem; line-height:1.55; }
 .validation-card code { color:var(--green); font:600 .76rem var(--font-mono); }
+
+.validation-card__narrative { padding:14px; }
+.validation-card__narrative p { margin:0; color:var(--muted); font-size:.84rem; line-height:1.65; }
