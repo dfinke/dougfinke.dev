@@ -69,10 +69,10 @@
 
   if (filterBar && labGrid) {
     const searchInput = document.querySelector("#lab-search");
-    const tagButtons = document.querySelector(".lab-filter-tags");
+    const topicSelect = document.querySelector("#lab-topic-filter");
     const filterStatus = document.querySelector("#lab-filter-status");
     const cards = Array.from(labGrid.querySelectorAll(".lab-card"));
-    const tags = Array.from(new Set(cards.flatMap(function (card) {
+    const topics = Array.from(new Set(cards.flatMap(function (card) {
       return Array.from(card.querySelectorAll(".lab-tags span")).map(function (tag) {
         return tag.textContent.trim();
       });
@@ -80,44 +80,26 @@
       return left.localeCompare(right);
     });
 
-    let selectedTag = "";
-
-    function createFilterButton(label, value, active) {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "lab-filter" + (active ? " is-active" : "");
-      button.textContent = label;
-      button.dataset.filter = value;
-      button.setAttribute("aria-pressed", String(active));
-      button.addEventListener("click", function () {
-        selectedTag = value;
-        document.querySelectorAll(".lab-filter").forEach(function (item) {
-          const isActive = item.dataset.filter === selectedTag;
-          item.classList.toggle("is-active", isActive);
-          item.setAttribute("aria-pressed", String(isActive));
-        });
-        applyFilters();
-      });
-      tagButtons.appendChild(button);
-    }
-
-    createFilterButton("All topics", "", true);
-    tags.forEach(function (tag) {
-      createFilterButton(tag, tag.toLowerCase(), false);
+    topics.forEach(function (topic) {
+      const option = document.createElement("option");
+      option.value = topic.toLowerCase();
+      option.textContent = topic;
+      topicSelect.appendChild(option);
     });
 
     function applyFilters() {
       const query = (searchInput.value || "").trim().toLowerCase();
+      const selectedTopic = topicSelect.value;
       let visible = 0;
 
       cards.forEach(function (card) {
         const text = card.textContent.toLowerCase();
-        const cardTags = Array.from(card.querySelectorAll(".lab-tags span")).map(function (tag) {
+        const cardTopics = Array.from(card.querySelectorAll(".lab-tags span")).map(function (tag) {
           return tag.textContent.trim().toLowerCase();
         });
         const matchesQuery = !query || text.includes(query);
-        const matchesTag = !selectedTag || cardTags.includes(selectedTag);
-        const show = matchesQuery && matchesTag;
+        const matchesTopic = !selectedTopic || cardTopics.includes(selectedTopic);
+        const show = matchesQuery && matchesTopic;
         card.hidden = !show;
         if (show) {
           visible += 1;
@@ -130,6 +112,7 @@
     }
 
     searchInput.addEventListener("input", applyFilters);
+    topicSelect.addEventListener("change", applyFilters);
     applyFilters();
   }
 
