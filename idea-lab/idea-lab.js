@@ -17,37 +17,51 @@
     });
   }
 
-  document.addEventListener("click", async function (event) {
-    const button = event.target.closest("[data-copy-target]");
-    if (!button) {
-      return;
-    }
-
-    const target = document.getElementById(button.dataset.copyTarget);
-    if (!target) {
-      return;
-    }
-
+  function showCopyResult(button, success) {
     const original = button.dataset.copyOriginal || button.textContent;
     button.dataset.copyOriginal = original;
     window.clearTimeout(button.copyResetTimer);
-
-    try {
-      await navigator.clipboard.writeText(target.innerText);
-      button.textContent = "✓ Copied";
-      button.classList.add("is-copied");
-      button.setAttribute("aria-label", "Copied");
-    } catch (error) {
-      button.textContent = "Select manually";
-      button.classList.remove("is-copied");
-      button.setAttribute("aria-label", "Select manually");
-    }
-
+    button.textContent = success ? "✓ Copied" : "Copy failed";
+    button.classList.toggle("is-copied", success);
+    button.setAttribute("aria-label", success ? "Copied" : "Copy failed");
     button.copyResetTimer = window.setTimeout(function () {
       button.textContent = original;
       button.classList.remove("is-copied");
       button.setAttribute("aria-label", original);
-    }, 1400);
+    }, 1600);
+  }
+
+  document.addEventListener("click", async function (event) {
+    const button = event.target.closest("[data-copy-target], [data-copy-lab-link], [data-copy-lab-agent]");
+    if (!button) {
+      return;
+    }
+
+    let copyText = "";
+    if (button.dataset.copyTarget) {
+      const target = document.getElementById(button.dataset.copyTarget);
+      if (!target) {
+        return;
+      }
+      copyText = target.innerText;
+    } else {
+      const lab = button.closest(".lab-detail");
+      if (!lab || !lab.id) {
+        return;
+      }
+      const labTitle = lab.querySelector("h3")?.textContent.trim() || "PowerShell Idea Lab";
+      const labUrl = window.location.origin + window.location.pathname + "#" + lab.id;
+      copyText = button.hasAttribute("data-copy-lab-agent")
+        ? 'Read and understand this PowerShell 7 Idea Lab: "' + labTitle + '"\n' + labUrl + "\n\nHelp me extend, adapt, or automate it."
+        : labUrl;
+    }
+
+    try {
+      await navigator.clipboard.writeText(copyText);
+      showCopyResult(button, true);
+    } catch (error) {
+      showCopyResult(button, false);
+    }
   });
 
   const filterBar = document.querySelector(".lab-filters");
