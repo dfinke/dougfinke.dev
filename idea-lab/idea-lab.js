@@ -121,6 +121,9 @@
   }
 
   const revealItems = document.querySelectorAll(".reveal");
+  const revealAll = function () {
+    revealItems.forEach(function (item) { item.classList.add("is-visible"); });
+  };
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(function (entries, observer) {
       entries.forEach(function (entry) {
@@ -131,7 +134,9 @@
       });
     }, { threshold: 0.08 });
     revealItems.forEach(function (item) { observer.observe(item); });
+    // Keep the page readable even when a browser exposes a broken or delayed observer.
+    window.setTimeout(revealAll, 500);
   } else {
-    revealItems.forEach(function (item) { item.classList.add("is-visible"); });
+    revealAll();
   }
 })();
