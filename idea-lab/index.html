@@ -52,7 +52,42 @@ PowerShell 7 · sample data · proof</code></pre></div></section>
   </div>
   <p class="lab-filter-status" id="lab-filter-status" aria-live="polite"></p>
 </div>
-<div class="lab-grid"><a class="lab-card reveal" href="#lab-2026-09-24-0259-braille-waveform-renderer">
+<div class="lab-grid"><a class="lab-card reveal" href="#lab-2026-09-25-0302-mandelbrot-terminal-renderer">
+<div class="lab-card__top"><span class="lab-card__number">01</span><span class="lab-card__status">Passed</span></div>
+  <p class="lab-date">2026-09-25</p>
+  <h3>Mandelbrot Terminal Renderer</h3><p>Render a deterministic Mandelbrot set with a compact terminal character palette.</p>
+  <div class="lab-tags"><span>PowerShell</span><span>Fractal</span><span>Visualization</span></div>
+<span class="lab-card__link">Open the lab <span aria-hidden="true">↗</span></span>
+</a>
+<a class="lab-card reveal" href="#lab-2026-09-25-0302-garden-harvest-workbook">
+<div class="lab-card__top"><span class="lab-card__number">02</span><span class="lab-card__status">Passed</span></div>
+  <p class="lab-date">2026-09-25</p>
+  <h3>Garden Harvest Workbook</h3><p>Build a two-sheet harvest workbook with a crop summary and chart.</p>
+  <div class="lab-tags"><span>PowerShell</span><span>ImportExcel</span><span>Charts</span></div>
+<span class="lab-card__link">Open the lab <span aria-hidden="true">↗</span></span>
+</a>
+<a class="lab-card reveal" href="#lab-2026-09-25-0302-paint-coverage-planner">
+<div class="lab-card__top"><span class="lab-card__number">03</span><span class="lab-card__status">Passed</span></div>
+  <p class="lab-date">2026-09-25</p>
+  <h3>Paint Coverage Planner</h3><p>Estimate paint, whole cans, and leftovers from walls, openings, coats, and waste.</p>
+  <div class="lab-tags"><span>PowerShell</span><span>Calculation</span><span>Planning</span></div>
+<span class="lab-card__link">Open the lab <span aria-hidden="true">↗</span></span>
+</a>
+<a class="lab-card reveal" href="#lab-2026-09-25-0302-token-bucket-traffic-simulator">
+<div class="lab-card__top"><span class="lab-card__number">04</span><span class="lab-card__status">Passed</span></div>
+  <p class="lab-date">2026-09-25</p>
+  <h3>Token Bucket Traffic Simulator</h3><p>Replay request bursts through a deterministic in-memory rate limiter.</p>
+  <div class="lab-tags"><span>PowerShell</span><span>Simulation</span><span>Rate Limiting</span></div>
+<span class="lab-card__link">Open the lab <span aria-hidden="true">↗</span></span>
+</a>
+<a class="lab-card reveal" href="#lab-2026-09-25-0302-bloom-filter-membership-demo">
+<div class="lab-card__top"><span class="lab-card__number">05</span><span class="lab-card__status">Passed</span></div>
+  <p class="lab-date">2026-09-25</p>
+  <h3>Bloom Filter Membership Demo</h3><p>Explore probabilistic membership checks with deterministic SHA-256 indexes.</p>
+  <div class="lab-tags"><span>PowerShell</span><span>Hashing</span><span>Algorithms</span></div>
+<span class="lab-card__link">Open the lab <span aria-hidden="true">↗</span></span>
+</a>
+<a class="lab-card reveal" href="#lab-2026-09-24-0259-braille-waveform-renderer">
 <div class="lab-card__top"><span class="lab-card__number">01</span><span class="lab-card__status">Passed</span></div>
   <p class="lab-date">2026-09-24</p>
   <h3>Braille Waveform Renderer</h3><p>Turn numeric samples into a compact Unicode Braille waveform.</p>
@@ -1957,6 +1992,553 @@ QuestionCount : 3
 Exists        : True
 </code></pre></div></details>
   <details class="lab-output lab-validation"><summary>5. Validation Performed by the AI Workflow</summary><p class="lab-output__intro">The runtime, expected results, and safety boundaries were checked and recorded.</p><div class="lab-validation__body"><div class="validation-card"><div class="validation-card__status"><span>Validation Status</span><strong>Passed</strong></div><div class="validation-card__narrative"><ul><li><strong>Runtime:</strong> PowerShell 7.6.6</li><li><strong>Command:</strong> <code>pwsh -NoLogo -NoProfile -NonInteractive -File ./run.ps1</code></li><li><strong>Exit status:</strong> 0</li><li><strong>Module:</strong> ImportExcel 7.8.10</li><li><strong>Checks:</strong> Created <code>workshop-feedback.xlsx</code>; confirmed <code>Responses</code> and <code>Summary</code> worksheets, three summary rows, one chart, a first average of 4.6, and a final favorable percentage of 80%.</li><li><strong>Runtime note:</strong> The Linux image lacks the optional native library used for column autosizing. The lab avoids autosizing, and workbook creation plus read-back validation passed.</li><li><strong>Safety:</strong> Fictional data only; no network access or system changes, and only the requested workbook was written.</li></ul></div></div></div></details>
+</article>
+<article id="lab-2026-09-25-0302-mandelbrot-terminal-renderer" class="lab-detail reveal">
+  <div class="lab-detail__header"><div><p class="eyebrow">Lab · 2026-09-25</p><h3>Mandelbrot Terminal Renderer</h3><p>Render a deterministic Mandelbrot set with a compact terminal character palette.</p></div><span class="lab-detail__badge">Validated</span></div>
+  <p class="lab-detail__story">AI found the scenario, created the prompt and runner, generated the PowerShell, ran it, and validated the result.</p>
+  <div class="lab-detail__actions" aria-label="PowerShell lab sharing tools">
+    <span class="lab-detail__technology">PowerShell 7 implementation</span>
+    <button class="lab-share-button" type="button" data-copy-lab-link aria-label="Copy link to this PowerShell lab">Copy lab link</button>
+    <button class="lab-share-button lab-share-button--primary" type="button" data-copy-lab-agent aria-label="Copy an AI-ready instruction for this PowerShell lab">Copy for AI</button>
+  </div>
+  <div class="lab-detail__grid">
+    <section class="lab-panel lab-panel--prompt"><div class="lab-panel__heading"><h4>1. The Prompt AI Created for This Idea</h4><button class="copy-button" type="button" data-copy-target="prompt-2026-09-25-0302-mandelbrot-terminal-renderer">Copy</button></div><p class="lab-panel__intro">After finding the scenario, AI turned it into this concise prompt. That prompt was then used to generate the PowerShell.</p><pre id="prompt-2026-09-25-0302-mandelbrot-terminal-renderer"><code>Create a fully commented PowerShell 7 script that renders a Mandelbrot set from width, height, center, scale, and iteration parameters. Return one Unicode text row per output line. Keep it deterministic, non-interactive, in memory, and network-free.
+</code></pre></section>
+    <section class="lab-panel"><div class="lab-panel__heading"><h4>2. The Runner AI Created</h4><button class="copy-button" type="button" data-copy-target="runner-2026-09-25-0302-mandelbrot-terminal-renderer">Copy</button></div><p class="lab-panel__intro">AI also created <code>run.ps1</code>. It prepares the sample data, passes the parameters, and invokes the generated PowerShell.</p><pre id="runner-2026-09-25-0302-mandelbrot-terminal-renderer"><code>$ErrorActionPreference = 'Stop'
+
+# Render a compact, deterministic viewport that fits comfortably in captured output.
+&amp; (Join-Path $PSScriptRoot 'solution.ps1') `
+    -Width 64 `
+    -Height 24 `
+    -MaxIterations 70 `
+    -CenterX -0.65 `
+    -CenterY 0.0 `
+    -Scale 2.7
+</code></pre></section>
+    <section class="lab-panel"><div class="lab-panel__heading"><h4>3. The PowerShell AI Generated</h4><button class="copy-button" type="button" data-copy-target="solution-2026-09-25-0302-mandelbrot-terminal-renderer">Copy</button></div><p class="lab-panel__intro"><code>solution.ps1</code> is the runnable PowerShell produced from the AI-created prompt.</p><pre id="solution-2026-09-25-0302-mandelbrot-terminal-renderer"><code>param(
+    [ValidateRange(20, 160)] [int]$Width = 72,
+    [ValidateRange(10, 80)] [int]$Height = 28,
+    [ValidateRange(10, 500)] [int]$MaxIterations = 80,
+    [double]$CenterX = -0.65,
+    [double]$CenterY = 0.0,
+    [ValidateRange(0.1, 4.0)] [double]$Scale = 2.7
+)
+
+# Characters progress from empty space to dense ink as a point takes longer to escape.
+$palette = ' .:-=+*#%@'
+
+# Correct for terminal cells being taller than they are wide.
+$verticalScale = $Scale * ($Height / $Width) * 1.8
+
+# Build one immutable text row at a time so callers can pipe or capture the rendering.
+for ($row = 0; $row -lt $Height; $row++) {
+    $line = [System.Text.StringBuilder]::new($Width)
+
+    # Convert the row to the imaginary component of the complex plane.
+    $cy = $CenterY + (($row / ($Height - 1.0)) - 0.5) * $verticalScale
+
+    for ($column = 0; $column -lt $Width; $column++) {
+        # Convert the column to the real component of the complex plane.
+        $cx = $CenterX + (($column / ($Width - 1.0)) - 0.5) * $Scale
+        $x = 0.0
+        $y = 0.0
+        $iteration = 0
+
+        # Iterate z = z² + c until the point escapes or reaches the bounded limit.
+        while (($x * $x + $y * $y) -le 4.0 -and $iteration -lt $MaxIterations) {
+            $nextX = ($x * $x) - ($y * $y) + $cx
+            $y = (2.0 * $x * $y) + $cy
+            $x = $nextX
+            $iteration++
+        }
+
+        # Points that never escaped use the darkest character in the palette.
+        if ($iteration -eq $MaxIterations) {
+            $paletteIndex = $palette.Length - 1
+        }
+        else {
+            # Compress the wide escape range so exterior bands remain visible.
+            $ratio = [Math]::Sqrt($iteration / [double]$MaxIterations)
+            $paletteIndex = [Math]::Min($palette.Length - 2, [Math]::Floor($ratio * ($palette.Length - 1)))
+        }
+
+        [void]$line.Append($palette[$paletteIndex])
+    }
+
+    $line.ToString()
+}
+</code></pre></section>
+  </div>
+  <details class="lab-output"><summary>4. What Happened When It Ran</summary><p class="lab-output__intro">The actual captured output, errors, and exit status.</p><div class="lab-output__content"><pre><code>PowerShell version: 7.6.6
+Command: pwsh -NoLogo -NoProfile -NonInteractive -File ./run.ps1
+Exit status: 0
+
+STDOUT:
+............................::::::::::::::-=*--:::::::::........
+..........................::::::::::::::=+=@@@==:::::::::.......
+........................:::::::::::::::--#@@@@@=-:::::::::......
+......................::::::::::--=---=--=*@@@=---=-:::-:::.....
+....................::::::::::::--@@%@@@@@@@@@@@@@++-#*=-:::....
+.................::::::::::::::---=@@@@@@@@@@@@@@@@@@@@=:::::...
+............:::::::::::::::::--*@@@@@@@@@@@@@@@@@@@@@@@*-::::...
+.......::::::::::=--------:---+@@@@@@@@@@@@@@@@@@@@@@@@#@=::::..
+....:::::::::::::--=*==@==----*@@@@@@@@@@@@@@@@@@@@@@@@@--::::..
+..::::::::::::::--=+@@@@@@@@==@@@@@@@@@@@@@@@@@@@@@@@@@@*-:::::.
+.::::::::::::-*--=%@@@@@@@@@@+@@@@@@@@@@@@@@@@@@@@@@@@@@-::::::.
+.:::::::----=-=#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-:::::::.
+.:::::::----=-=#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-:::::::.
+.::::::::::::-*--=%@@@@@@@@@@+@@@@@@@@@@@@@@@@@@@@@@@@@@-::::::.
+..::::::::::::::--=+@@@@@@@@==@@@@@@@@@@@@@@@@@@@@@@@@@@*-:::::.
+....:::::::::::::--=*==@==----*@@@@@@@@@@@@@@@@@@@@@@@@@--::::..
+.......::::::::::=--------:---+@@@@@@@@@@@@@@@@@@@@@@@@#@=::::..
+............:::::::::::::::::--*@@@@@@@@@@@@@@@@@@@@@@@*-::::...
+.................::::::::::::::---=@@@@@@@@@@@@@@@@@@@@=:::::...
+....................::::::::::::--@@%@@@@@@@@@@@@@++-#*=-:::....
+......................::::::::::--=---=--=*@@@=---=-:::-:::.....
+........................:::::::::::::::--#@@@@@=-:::::::::......
+..........................::::::::::::::=+=@@@==:::::::::.......
+............................::::::::::::::-=*--:::::::::........
+
+STDERR:
+(empty)
+</code></pre></div></details>
+  <details class="lab-output lab-validation"><summary>5. Validation Performed by the AI Workflow</summary><p class="lab-output__intro">The runtime, expected results, and safety boundaries were checked and recorded.</p><div class="lab-validation__body"><div class="validation-card"><div class="validation-card__status"><span>Validation Status</span><strong>Passed</strong></div><div class="validation-card__narrative"><ul><li><strong>tatus:</strong> Passed</li><li><strong>untime:</strong> PowerShell 7.6.6</li><li><strong>ommand:</strong> pwsh -NoLogo -NoProfile -NonInteractive -File ./run.ps1</li><li><strong>xit status:</strong> 0</li><li><strong>tandard error:</strong> Empty</li><li><strong>hecks:</strong> Produced exactly 24 rows of 64 characters and included both exterior shading and bounded-set characters.</li><li><strong>afety:</strong> Deterministic, non-interactive, in-memory calculation with no files, network access, credentials, or system changes.</li></ul></div></div></div></details>
+</article>
+<article id="lab-2026-09-25-0302-garden-harvest-workbook" class="lab-detail reveal">
+  <div class="lab-detail__header"><div><p class="eyebrow">Lab · 2026-09-25</p><h3>Garden Harvest Workbook</h3><p>Build a two-sheet harvest workbook with a crop summary and chart.</p></div><span class="lab-detail__badge">Validated</span></div>
+  <p class="lab-detail__story">AI found the scenario, created the prompt and runner, generated the PowerShell, ran it, and validated the result.</p>
+  <div class="lab-detail__actions" aria-label="PowerShell lab sharing tools">
+    <span class="lab-detail__technology">PowerShell 7 implementation</span>
+    <button class="lab-share-button" type="button" data-copy-lab-link aria-label="Copy link to this PowerShell lab">Copy lab link</button>
+    <button class="lab-share-button lab-share-button--primary" type="button" data-copy-lab-agent aria-label="Copy an AI-ready instruction for this PowerShell lab">Copy for AI</button>
+  </div>
+  <div class="lab-detail__grid">
+    <section class="lab-panel lab-panel--prompt"><div class="lab-panel__heading"><h4>1. The Prompt AI Created for This Idea</h4><button class="copy-button" type="button" data-copy-target="prompt-2026-09-25-0302-garden-harvest-workbook">Copy</button></div><p class="lab-panel__intro">After finding the scenario, AI turned it into this concise prompt. That prompt was then used to generate the PowerShell.</p><pre id="prompt-2026-09-25-0302-garden-harvest-workbook"><code>Create a fully commented PowerShell 7 script using ImportExcel. Accept harvest records and an output path, then build a workbook with a detailed table, a crop summary of weight and harvest count, and a column chart. Return a concise creation summary. No network access or external data.
+</code></pre></section>
+    <section class="lab-panel"><div class="lab-panel__heading"><h4>2. The Runner AI Created</h4><button class="copy-button" type="button" data-copy-target="runner-2026-09-25-0302-garden-harvest-workbook">Copy</button></div><p class="lab-panel__intro">AI also created <code>run.ps1</code>. It prepares the sample data, passes the parameters, and invokes the generated PowerShell.</p><pre id="runner-2026-09-25-0302-garden-harvest-workbook"><code>$ErrorActionPreference = 'Stop'
+
+# Fictional harvest records keep the example repeatable and free of external dependencies.
+$harvest = @(
+    [pscustomobject]@{ Date = '2026-08-02'; Crop = 'Tomato';  Plot = 'A1'; Quantity = 14; WeightKg = 3.20 }
+    [pscustomobject]@{ Date = '2026-08-05'; Crop = 'Zucchini'; Plot = 'B2'; Quantity = 5;  WeightKg = 4.60 }
+    [pscustomobject]@{ Date = '2026-08-09'; Crop = 'Tomato';  Plot = 'A1'; Quantity = 18; WeightKg = 4.10 }
+    [pscustomobject]@{ Date = '2026-08-12'; Crop = 'Pepper';  Plot = 'C1'; Quantity = 11; WeightKg = 1.75 }
+    [pscustomobject]@{ Date = '2026-08-16'; Crop = 'Zucchini'; Plot = 'B2'; Quantity = 4;  WeightKg = 3.90 }
+    [pscustomobject]@{ Date = '2026-08-19'; Crop = 'Pepper';  Plot = 'C1'; Quantity = 16; WeightKg = 2.35 }
+)
+
+$outputPath = Join-Path $PSScriptRoot &quot;garden-harvest-$PID.xlsx&quot;
+
+# Pass the records and destination into the reusable AI-generated solution.
+&amp; (Join-Path $PSScriptRoot 'solution.ps1') -Harvest $harvest -OutputPath $outputPath |
+    Format-List
+</code></pre></section>
+    <section class="lab-panel"><div class="lab-panel__heading"><h4>3. The PowerShell AI Generated</h4><button class="copy-button" type="button" data-copy-target="solution-2026-09-25-0302-garden-harvest-workbook">Copy</button></div><p class="lab-panel__intro"><code>solution.ps1</code> is the runnable PowerShell produced from the AI-created prompt.</p><pre id="solution-2026-09-25-0302-garden-harvest-workbook"><code>param(
+    [Parameter(Mandatory)] [object[]]$Harvest,
+    [Parameter(Mandatory)] [string]$OutputPath
+)
+
+# Stop early with a clear requirement instead of silently producing a partial workbook.
+if (-not (Get-Module -ListAvailable -Name ImportExcel)) {
+    throw 'The ImportExcel module is required.'
+}
+
+# Normalize the input so dates, quantities, and weights have predictable workbook types.
+$detail = foreach ($entry in $Harvest) {
+    [pscustomobject]@{
+        Date       = [datetime]$entry.Date
+        Crop       = [string]$entry.Crop
+        Plot       = [string]$entry.Plot
+        Quantity   = [int]$entry.Quantity
+        WeightKg   = [Math]::Round([double]$entry.WeightKg, 2)
+    }
+}
+
+# Aggregate each crop into a useful dashboard-friendly summary.
+$summary = $detail |
+    Group-Object Crop |
+    ForEach-Object {
+        [pscustomobject]@{
+            Crop         = $_.Name
+            Harvests     = $_.Count
+            TotalItems   = ($_.Group | Measure-Object Quantity -Sum).Sum
+            TotalWeightKg = [Math]::Round(($_.Group | Measure-Object WeightKg -Sum).Sum, 2)
+        }
+    } |
+    Sort-Object TotalWeightKg -Descending
+
+# Define the chart against named table columns so it expands with the summary data.
+$chart = New-ExcelChartDefinition `
+    -XRange Crop `
+    -YRange TotalWeightKg `
+    -Title 'Harvest Weight by Crop' `
+    -ChartType ColumnClustered `
+    -NoLegend
+
+# Write the detailed table first, then append the summary and its chart.
+$detail | Export-Excel `
+    -Path $OutputPath `
+    -WorksheetName 'Harvest' `
+    -TableName 'HarvestDetail' `
+    -TableStyle Medium2 `
+    -FreezeTopRow `
+    -BoldTopRow
+
+$summary | Export-Excel `
+    -Path $OutputPath `
+    -WorksheetName 'Crop Summary' `
+    -TableName 'CropSummary' `
+    -TableStyle Medium4 `
+    -FreezeTopRow `
+    -BoldTopRow `
+    -Append `
+    -ExcelChartDefinition $chart
+
+# Return a small object that is useful both interactively and in automated validation.
+[pscustomobject]@{
+    Workbook       = $OutputPath
+    DetailRows     = $detail.Count
+    SummaryRows    = $summary.Count
+    TotalWeightKg  = [Math]::Round(($detail | Measure-Object WeightKg -Sum).Sum, 2)
+}
+</code></pre></section>
+  </div>
+  <details class="lab-output"><summary>4. What Happened When It Ran</summary><p class="lab-output__intro">The actual captured output, errors, and exit status.</p><div class="lab-output__content"><pre><code>PowerShell version: 7.6.6
+ImportExcel version: 7.8.10
+Command: pwsh -NoLogo -NoProfile -NonInteractive -File ./run.ps1
+Exit status: 0
+
+STDOUT:
+WARNING: ImportExcel Module Cannot Autosize. Please run the following command to install dependencies:
+apt-get -y update &amp;&amp; apt-get install -y --no-install-recommends libgdiplus libc6-dev
+
+Workbook      : .../garden-harvest-2.xlsx
+DetailRows    : 6
+SummaryRows   : 3
+TotalWeightKg : 19.9
+
+Workbook inspection:
+Sheets                HarvestRows SummaryRows ChartCount
+------                ----------- ----------- ----------
+Harvest, Crop Summary           6           3          1
+
+STDERR:
+(empty)
+</code></pre></div></details>
+  <details class="lab-output lab-validation"><summary>5. Validation Performed by the AI Workflow</summary><p class="lab-output__intro">The runtime, expected results, and safety boundaries were checked and recorded.</p><div class="lab-validation__body"><div class="validation-card"><div class="validation-card__status"><span>Validation Status</span><strong>Passed</strong></div><div class="validation-card__narrative"><ul><li><strong>tatus:</strong> Passed</li><li><strong>untime:</strong> PowerShell 7.6.6 with ImportExcel 7.8.10</li><li><strong>ommand:</strong> pwsh -NoLogo -NoProfile -NonInteractive -File ./run.ps1</li><li><strong>xit status:</strong> 0</li><li><strong>tandard error:</strong> Empty</li><li><strong>hecks:</strong> Opened the generated workbook and confirmed Harvest and Crop Summary sheets, 6 detail rows, 3 summary rows, 1 chart, and a 19.9 kg total.</li><li><strong>ote:</strong> ImportExcel reported that native autosizing dependencies were absent; the lab does not request autosizing and workbook generation remained valid.</li><li><strong>afety:</strong> Uses fictional input and writes only a new workbook in the lab folder. No network, credential, registry, or system access.</li></ul></div></div></div></details>
+</article>
+<article id="lab-2026-09-25-0302-paint-coverage-planner" class="lab-detail reveal">
+  <div class="lab-detail__header"><div><p class="eyebrow">Lab · 2026-09-25</p><h3>Paint Coverage Planner</h3><p>Estimate paint, whole cans, and leftovers from walls, openings, coats, and waste.</p></div><span class="lab-detail__badge">Validated</span></div>
+  <p class="lab-detail__story">AI found the scenario, created the prompt and runner, generated the PowerShell, ran it, and validated the result.</p>
+  <div class="lab-detail__actions" aria-label="PowerShell lab sharing tools">
+    <span class="lab-detail__technology">PowerShell 7 implementation</span>
+    <button class="lab-share-button" type="button" data-copy-lab-link aria-label="Copy link to this PowerShell lab">Copy lab link</button>
+    <button class="lab-share-button lab-share-button--primary" type="button" data-copy-lab-agent aria-label="Copy an AI-ready instruction for this PowerShell lab">Copy for AI</button>
+  </div>
+  <div class="lab-detail__grid">
+    <section class="lab-panel lab-panel--prompt"><div class="lab-panel__heading"><h4>1. The Prompt AI Created for This Idea</h4><button class="copy-button" type="button" data-copy-target="prompt-2026-09-25-0302-paint-coverage-planner">Copy</button></div><p class="lab-panel__intro">After finding the scenario, AI turned it into this concise prompt. That prompt was then used to generate the PowerShell.</p><pre id="prompt-2026-09-25-0302-paint-coverage-planner"><code>Create a fully commented PowerShell 7 script that accepts wall rectangles, opening rectangles, coats, coverage per liter, waste percent, and can size. Calculate net area, adjusted liters, whole cans, and leftover paint. Validate impossible inputs and use only in-memory data.
+</code></pre></section>
+    <section class="lab-panel"><div class="lab-panel__heading"><h4>2. The Runner AI Created</h4><button class="copy-button" type="button" data-copy-target="runner-2026-09-25-0302-paint-coverage-planner">Copy</button></div><p class="lab-panel__intro">AI also created <code>run.ps1</code>. It prepares the sample data, passes the parameters, and invokes the generated PowerShell.</p><pre id="runner-2026-09-25-0302-paint-coverage-planner"><code>$ErrorActionPreference = 'Stop'
+
+# Model an L-shaped room as four wall rectangles with one door and two windows.
+$walls = @(
+    [pscustomobject]@{ WidthMeters = 4.8; HeightMeters = 2.6 }
+    [pscustomobject]@{ WidthMeters = 3.7; HeightMeters = 2.6 }
+    [pscustomobject]@{ WidthMeters = 2.9; HeightMeters = 2.6 }
+    [pscustomobject]@{ WidthMeters = 2.1; HeightMeters = 2.6 }
+)
+
+$openings = @(
+    [pscustomobject]@{ WidthMeters = 0.9; HeightMeters = 2.1 }
+    [pscustomobject]@{ WidthMeters = 1.2; HeightMeters = 1.1 }
+    [pscustomobject]@{ WidthMeters = 1.0; HeightMeters = 1.1 }
+)
+
+&amp; (Join-Path $PSScriptRoot 'solution.ps1') `
+    -Walls $walls `
+    -Openings $openings `
+    -Coats 2 `
+    -CoverageSquareMetersPerLiter 10 `
+    -WastePercent 12 `
+    -CanSizeLiters 3.7 |
+    Format-List
+</code></pre></section>
+    <section class="lab-panel"><div class="lab-panel__heading"><h4>3. The PowerShell AI Generated</h4><button class="copy-button" type="button" data-copy-target="solution-2026-09-25-0302-paint-coverage-planner">Copy</button></div><p class="lab-panel__intro"><code>solution.ps1</code> is the runnable PowerShell produced from the AI-created prompt.</p><pre id="solution-2026-09-25-0302-paint-coverage-planner"><code>param(
+    [Parameter(Mandatory)] [object[]]$Walls,
+    [object[]]$Openings = @(),
+    [ValidateRange(1, 10)] [int]$Coats = 2,
+    [ValidateRange(0.1, 100)] [double]$CoverageSquareMetersPerLiter = 10,
+    [ValidateRange(0, 50)] [double]$WastePercent = 10,
+    [ValidateRange(0.1, 50)] [double]$CanSizeLiters = 3.7
+)
+
+# Sum the rectangular wall surfaces supplied by the caller.
+$wallArea = ($Walls | ForEach-Object {
+    $width = [double]$_.WidthMeters
+    $height = [double]$_.HeightMeters
+    if ($width -le 0 -or $height -le 0) { throw 'Wall dimensions must be positive.' }
+    $width * $height
+} | Measure-Object -Sum).Sum
+
+# Sum doors, windows, and other unpainted rectangular openings.
+$openingArea = ($Openings | ForEach-Object {
+    $width = [double]$_.WidthMeters
+    $height = [double]$_.HeightMeters
+    if ($width -le 0 -or $height -le 0) { throw 'Opening dimensions must be positive.' }
+    $width * $height
+} | Measure-Object -Sum).Sum
+
+# Guard against a physically impossible plan before estimating materials.
+$netArea = $wallArea - $openingArea
+if ($netArea -le 0) { throw 'Openings must cover less area than the walls.' }
+
+# Apply coats first, then add the requested waste allowance.
+$coatedArea = $netArea * $Coats
+$baseLiters = $coatedArea / $CoverageSquareMetersPerLiter
+$adjustedLiters = $baseLiters * (1 + ($WastePercent / 100.0))
+$canCount = [Math]::Ceiling($adjustedLiters / $CanSizeLiters)
+$purchasedLiters = $canCount * $CanSizeLiters
+
+# Return both the answer and its major inputs so the estimate can be reviewed.
+[pscustomobject]@{
+    WallAreaSquareMeters    = [Math]::Round($wallArea, 2)
+    OpeningAreaSquareMeters = [Math]::Round($openingArea, 2)
+    NetAreaSquareMeters     = [Math]::Round($netArea, 2)
+    Coats                   = $Coats
+    LitersRequired          = [Math]::Round($adjustedLiters, 2)
+    CanSizeLiters           = $CanSizeLiters
+    CansToBuy               = [int]$canCount
+    LeftoverLiters          = [Math]::Round($purchasedLiters - $adjustedLiters, 2)
+}
+</code></pre></section>
+  </div>
+  <details class="lab-output"><summary>4. What Happened When It Ran</summary><p class="lab-output__intro">The actual captured output, errors, and exit status.</p><div class="lab-output__content"><pre><code>PowerShell version: 7.6.6
+Command: pwsh -NoLogo -NoProfile -NonInteractive -File ./run.ps1
+Exit status: 0
+
+STDOUT:
+WallAreaSquareMeters    : 35.1
+OpeningAreaSquareMeters : 4.31
+NetAreaSquareMeters     : 30.79
+Coats                   : 2
+LitersRequired          : 6.9
+CanSizeLiters           : 3.7
+CansToBuy               : 2
+LeftoverLiters          : 0.5
+
+STDERR:
+(empty)
+</code></pre></div></details>
+  <details class="lab-output lab-validation"><summary>5. Validation Performed by the AI Workflow</summary><p class="lab-output__intro">The runtime, expected results, and safety boundaries were checked and recorded.</p><div class="lab-validation__body"><div class="validation-card"><div class="validation-card__status"><span>Validation Status</span><strong>Passed</strong></div><div class="validation-card__narrative"><ul><li><strong>tatus:</strong> Passed</li><li><strong>untime:</strong> PowerShell 7.6.6</li><li><strong>ommand:</strong> pwsh -NoLogo -NoProfile -NonInteractive -File ./run.ps1</li><li><strong>xit status:</strong> 0</li><li><strong>tandard error:</strong> Empty</li><li><strong>hecks:</strong> Confirmed 30.79 m² net area, 6.9 liters required after two coats and 12% waste, 2 cans, and 0.5 liters left over.</li><li><strong>afety:</strong> Uses fictional dimensions and performs only in-memory arithmetic.</li></ul></div></div></div></details>
+</article>
+<article id="lab-2026-09-25-0302-token-bucket-traffic-simulator" class="lab-detail reveal">
+  <div class="lab-detail__header"><div><p class="eyebrow">Lab · 2026-09-25</p><h3>Token Bucket Traffic Simulator</h3><p>Replay request bursts through a deterministic in-memory rate limiter.</p></div><span class="lab-detail__badge">Validated</span></div>
+  <p class="lab-detail__story">AI found the scenario, created the prompt and runner, generated the PowerShell, ran it, and validated the result.</p>
+  <div class="lab-detail__actions" aria-label="PowerShell lab sharing tools">
+    <span class="lab-detail__technology">PowerShell 7 implementation</span>
+    <button class="lab-share-button" type="button" data-copy-lab-link aria-label="Copy link to this PowerShell lab">Copy lab link</button>
+    <button class="lab-share-button lab-share-button--primary" type="button" data-copy-lab-agent aria-label="Copy an AI-ready instruction for this PowerShell lab">Copy for AI</button>
+  </div>
+  <div class="lab-detail__grid">
+    <section class="lab-panel lab-panel--prompt"><div class="lab-panel__heading"><h4>1. The Prompt AI Created for This Idea</h4><button class="copy-button" type="button" data-copy-target="prompt-2026-09-25-0302-token-bucket-traffic-simulator">Copy</button></div><p class="lab-panel__intro">After finding the scenario, AI turned it into this concise prompt. That prompt was then used to generate the PowerShell.</p><pre id="prompt-2026-09-25-0302-token-bucket-traffic-simulator"><code>Create a fully commented PowerShell 7 token-bucket simulator. Accept timestamped requests, bucket capacity, refill rate, and initial tokens. Return a decision record for every request plus totals. Keep it deterministic, bounded, in memory, and network-free.
+</code></pre></section>
+    <section class="lab-panel"><div class="lab-panel__heading"><h4>2. The Runner AI Created</h4><button class="copy-button" type="button" data-copy-target="runner-2026-09-25-0302-token-bucket-traffic-simulator">Copy</button></div><p class="lab-panel__intro">AI also created <code>run.ps1</code>. It prepares the sample data, passes the parameters, and invokes the generated PowerShell.</p><pre id="runner-2026-09-25-0302-token-bucket-traffic-simulator"><code>$ErrorActionPreference = 'Stop'
+
+# The burst includes close arrivals followed by pauses that allow the bucket to refill.
+$requests = @(
+    [pscustomobject]@{ TimeSeconds = 0.0; Name = 'image-a'; Cost = 3 }
+    [pscustomobject]@{ TimeSeconds = 0.2; Name = 'image-b'; Cost = 4 }
+    [pscustomobject]@{ TimeSeconds = 0.4; Name = 'report';  Cost = 5 }
+    [pscustomobject]@{ TimeSeconds = 1.8; Name = 'status';  Cost = 2 }
+    [pscustomobject]@{ TimeSeconds = 3.5; Name = 'export';  Cost = 6 }
+    [pscustomobject]@{ TimeSeconds = 6.0; Name = 'archive'; Cost = 5 }
+)
+
+&amp; (Join-Path $PSScriptRoot 'solution.ps1') `
+    -Requests $requests `
+    -Capacity 10 `
+    -RefillPerSecond 2 `
+    -InitialTokens 8 |
+    Format-Table -AutoSize
+</code></pre></section>
+    <section class="lab-panel"><div class="lab-panel__heading"><h4>3. The PowerShell AI Generated</h4><button class="copy-button" type="button" data-copy-target="solution-2026-09-25-0302-token-bucket-traffic-simulator">Copy</button></div><p class="lab-panel__intro"><code>solution.ps1</code> is the runnable PowerShell produced from the AI-created prompt.</p><pre id="solution-2026-09-25-0302-token-bucket-traffic-simulator"><code>param(
+    [Parameter(Mandatory)] [object[]]$Requests,
+    [ValidateRange(1, 10000)] [double]$Capacity,
+    [ValidateRange(0.01, 10000)] [double]$RefillPerSecond,
+    [ValidateRange(0, 10000)] [double]$InitialTokens = 0
+)
+
+# The bucket cannot begin with more tokens than its declared capacity.
+$tokens = [Math]::Min($Capacity, $InitialTokens)
+$lastTime = 0.0
+$accepted = 0
+$rejected = 0
+
+# Process requests chronologically so refills are deterministic.
+$events = foreach ($request in ($Requests | Sort-Object TimeSeconds)) {
+    $time = [double]$request.TimeSeconds
+    $cost = [double]$request.Cost
+    if ($time -lt $lastTime) { throw 'Request times must not move backward.' }
+    if ($cost -le 0 -or $cost -gt $Capacity) { throw 'Each request cost must be positive and no greater than capacity.' }
+
+    # Refill according to elapsed simulated time, capped at the bucket capacity.
+    $elapsed = $time - $lastTime
+    $tokensBefore = $tokens
+    $tokens = [Math]::Min($Capacity, $tokens + ($elapsed * $RefillPerSecond))
+    $refilled = $tokens - $tokensBefore
+
+    # Spend tokens only when the entire request can be accepted.
+    $allowed = $tokens -ge $cost
+    if ($allowed) {
+        $tokens -= $cost
+        $accepted++
+    }
+    else {
+        $rejected++
+    }
+
+    [pscustomobject]@{
+        TimeSeconds   = $time
+        Request       = [string]$request.Name
+        Cost          = $cost
+        Refilled      = [Math]::Round($refilled, 2)
+        Allowed       = $allowed
+        TokensAfter   = [Math]::Round($tokens, 2)
+    }
+
+    $lastTime = $time
+}
+
+# Emit the event stream followed by one distinct summary record.
+$events
+[pscustomobject]@{
+    TimeSeconds = '-'
+    Request     = 'TOTAL'
+    Cost        = '-'
+    Refilled    = '-'
+    Allowed     = &quot;$accepted accepted / $rejected rejected&quot;
+    TokensAfter = [Math]::Round($tokens, 2)
+}
+</code></pre></section>
+  </div>
+  <details class="lab-output"><summary>4. What Happened When It Ran</summary><p class="lab-output__intro">The actual captured output, errors, and exit status.</p><div class="lab-output__content"><pre><code>PowerShell version: 7.6.6
+Command: pwsh -NoLogo -NoProfile -NonInteractive -File ./run.ps1
+Exit status: 0
+
+STDOUT:
+TimeSeconds Request Cost Refilled                 Allowed TokensAfter
+----------- ------- ---- --------                 ------- -----------
+       0.00 image-a 3.00     0.00                    True        5.00
+       0.20 image-b 4.00     0.40                    True        1.40
+       0.40 report  5.00     0.40                   False        1.80
+       1.80 status  2.00     2.80                    True        2.60
+       3.50 export  6.00     3.40                    True        0.00
+       6.00 archive 5.00     5.00                    True        0.00
+          - TOTAL      -        - 5 accepted / 1 rejected        0.00
+
+STDERR:
+(empty)
+</code></pre></div></details>
+  <details class="lab-output lab-validation"><summary>5. Validation Performed by the AI Workflow</summary><p class="lab-output__intro">The runtime, expected results, and safety boundaries were checked and recorded.</p><div class="lab-validation__body"><div class="validation-card"><div class="validation-card__status"><span>Validation Status</span><strong>Passed</strong></div><div class="validation-card__narrative"><ul><li><strong>tatus:</strong> Passed</li><li><strong>untime:</strong> PowerShell 7.6.6</li><li><strong>ommand:</strong> pwsh -NoLogo -NoProfile -NonInteractive -File ./run.ps1</li><li><strong>xit status:</strong> 0</li><li><strong>tandard error:</strong> Empty</li><li><strong>hecks:</strong> Processed six timestamped requests in order, accepted five, rejected the insufficient-token burst, and ended with zero tokens.</li><li><strong>afety:</strong> Bounded, deterministic simulation using only in-memory sample requests; it opens no network connections.</li></ul></div></div></div></details>
+</article>
+<article id="lab-2026-09-25-0302-bloom-filter-membership-demo" class="lab-detail reveal">
+  <div class="lab-detail__header"><div><p class="eyebrow">Lab · 2026-09-25</p><h3>Bloom Filter Membership Demo</h3><p>Explore probabilistic membership checks with deterministic SHA-256 indexes.</p></div><span class="lab-detail__badge">Validated</span></div>
+  <p class="lab-detail__story">AI found the scenario, created the prompt and runner, generated the PowerShell, ran it, and validated the result.</p>
+  <div class="lab-detail__actions" aria-label="PowerShell lab sharing tools">
+    <span class="lab-detail__technology">PowerShell 7 implementation</span>
+    <button class="lab-share-button" type="button" data-copy-lab-link aria-label="Copy link to this PowerShell lab">Copy lab link</button>
+    <button class="lab-share-button lab-share-button--primary" type="button" data-copy-lab-agent aria-label="Copy an AI-ready instruction for this PowerShell lab">Copy for AI</button>
+  </div>
+  <div class="lab-detail__grid">
+    <section class="lab-panel lab-panel--prompt"><div class="lab-panel__heading"><h4>1. The Prompt AI Created for This Idea</h4><button class="copy-button" type="button" data-copy-target="prompt-2026-09-25-0302-bloom-filter-membership-demo">Copy</button></div><p class="lab-panel__intro">After finding the scenario, AI turned it into this concise prompt. That prompt was then used to generate the PowerShell.</p><pre id="prompt-2026-09-25-0302-bloom-filter-membership-demo"><code>Create a fully commented PowerShell 7 Bloom filter demonstration. Accept strings, query strings, bit count, and hash count. Use deterministic SHA-256-derived indexes, return query results and bit occupancy, and clearly label matches as possible rather than certain. Stay in memory with no network access.
+</code></pre></section>
+    <section class="lab-panel"><div class="lab-panel__heading"><h4>2. The Runner AI Created</h4><button class="copy-button" type="button" data-copy-target="runner-2026-09-25-0302-bloom-filter-membership-demo">Copy</button></div><p class="lab-panel__intro">AI also created <code>run.ps1</code>. It prepares the sample data, passes the parameters, and invokes the generated PowerShell.</p><pre id="runner-2026-09-25-0302-bloom-filter-membership-demo"><code>$ErrorActionPreference = 'Stop'
+
+# Use a small fictional command catalog and a mix of known and unknown queries.
+$items = @('Get-Orbit', 'Set-Canvas', 'Measure-Signal', 'New-Atlas', 'Test-Beacon', 'Format-Grid')
+$queries = @('Get-Orbit', 'Remove-Planet', 'Test-Beacon', 'Show-Compass', 'Format-Grid')
+
+&amp; (Join-Path $PSScriptRoot 'solution.ps1') `
+    -Items $items `
+    -Queries $queries `
+    -BitCount 128 `
+    -HashCount 4 |
+    Format-Table -AutoSize
+</code></pre></section>
+    <section class="lab-panel"><div class="lab-panel__heading"><h4>3. The PowerShell AI Generated</h4><button class="copy-button" type="button" data-copy-target="solution-2026-09-25-0302-bloom-filter-membership-demo">Copy</button></div><p class="lab-panel__intro"><code>solution.ps1</code> is the runnable PowerShell produced from the AI-created prompt.</p><pre id="solution-2026-09-25-0302-bloom-filter-membership-demo"><code>param(
+    [Parameter(Mandatory)] [string[]]$Items,
+    [Parameter(Mandatory)] [string[]]$Queries,
+    [ValidateRange(32, 8192)] [int]$BitCount = 256,
+    [ValidateRange(1, 8)] [int]$HashCount = 4
+)
+
+# Store the filter as booleans so the demonstration remains easy to inspect.
+$bits = [bool[]]::new($BitCount)
+
+function Get-BloomIndexes {
+    param([Parameter(Mandatory)] [string]$Value)
+
+    # SHA-256 provides stable bytes across platforms and PowerShell sessions.
+    $bytes = [System.Text.Encoding]::UTF8.GetBytes($Value)
+    $digest = [System.Security.Cryptography.SHA256]::HashData($bytes)
+
+    # Read separate four-byte windows to derive independent-looking indexes.
+    for ($index = 0; $index -lt $HashCount; $index++) {
+        $offset = ($index * 4) % ($digest.Length - 3)
+        $number = [BitConverter]::ToUInt32($digest, $offset)
+        [int]($number % $BitCount)
+    }
+}
+
+# Add each catalog item by setting all of its derived bit positions.
+foreach ($item in $Items) {
+    foreach ($index in (Get-BloomIndexes -Value $item)) {
+        $bits[$index] = $true
+    }
+}
+
+# A query is possibly present only when every required bit has been set.
+$results = foreach ($query in $Queries) {
+    $indexes = @(Get-BloomIndexes -Value $query)
+    $possiblyPresent = -not ($indexes | Where-Object { -not $bits[$_] } | Select-Object -First 1)
+
+    [pscustomobject]@{
+        Query            = $query
+        Verdict          = if ($possiblyPresent) { 'Possibly present' } else { 'Definitely absent' }
+        Indexes          = $indexes -join ', '
+        ActuallyInserted = $Items -ccontains $query
+    }
+}
+
+# Return query evidence followed by a compact occupancy summary.
+$results
+$setBits = ($bits | Where-Object { $_ }).Count
+[pscustomobject]@{
+    Query            = 'FILTER'
+    Verdict          = &quot;$setBits of $BitCount bits set&quot;
+    Indexes          = '-'
+    ActuallyInserted = '-'
+}
+</code></pre></section>
+  </div>
+  <details class="lab-output"><summary>4. What Happened When It Ran</summary><p class="lab-output__intro">The actual captured output, errors, and exit status.</p><div class="lab-output__content"><pre><code>PowerShell version: 7.6.6
+Command: pwsh -NoLogo -NoProfile -NonInteractive -File ./run.ps1
+Exit status: 0
+
+STDOUT:
+Query         Verdict            Indexes         ActuallyInserted
+-----         -------            -------         ----------------
+Get-Orbit     Possibly present   79, 46, 75, 117             True
+Remove-Planet Definitely absent  26, 17, 124, 19            False
+Test-Beacon   Possibly present   117, 47, 21, 79             True
+Show-Compass  Definitely absent  21, 40, 95, 81             False
+Format-Grid   Possibly present   113, 91, 37, 69             True
+FILTER        21 of 128 bits set -                              -
+
+STDERR:
+(empty)
+</code></pre></div></details>
+  <details class="lab-output lab-validation"><summary>5. Validation Performed by the AI Workflow</summary><p class="lab-output__intro">The runtime, expected results, and safety boundaries were checked and recorded.</p><div class="lab-validation__body"><div class="validation-card"><div class="validation-card__status"><span>Validation Status</span><strong>Passed</strong></div><div class="validation-card__narrative"><ul><li><strong>tatus:</strong> Passed</li><li><strong>untime:</strong> PowerShell 7.6.6</li><li><strong>ommand:</strong> pwsh -NoLogo -NoProfile -NonInteractive -File ./run.ps1</li><li><strong>xit status:</strong> 0</li><li><strong>tandard error:</strong> Empty</li><li><strong>hecks:</strong> All three inserted values were reported as possibly present, both absent sample values were definitely absent, and 21 of 128 bits were set.</li><li><strong>afety:</strong> Deterministic SHA-256 hashing and boolean-array operations only; no files, network access, or system changes.</li></ul></div></div></div></details>
 </article>
 <section id="archive" class="idea-lab-section idea-lab-archive reveal" aria-labelledby="archive-title"><div class="section-heading"><p class="eyebrow">Archive</p><h2 id="archive-title">Keep exploring.</h2><p>Every lab stays small enough to understand.</p></div><ol><li><time>2026-09-19</time><a href="#lab-2026-09-19-0302-data-transfer-time-estimator">Data Transfer Time Estimator</a></li>
 <li><time>2026-09-19</time><a href="#lab-2026-09-19-0302-team-hours-pivot-workbook">Team Hours Pivot Workbook</a></li>
