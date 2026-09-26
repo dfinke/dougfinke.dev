@@ -50,7 +50,7 @@
         return;
       }
       const titleLink = lab.querySelector(".lab-title-link");
-      const labTitle = titleLink?.getAttribute("aria-label")?.replace(/^Permalink to\\s+/, "").trim() || titleLink?.textContent.trim() || "PowerShell Idea Lab";
+      const labTitle = titleLink?.getAttribute("aria-label")?.replace("Permalink to ", "").trim() || titleLink?.textContent.trim() || "PowerShell Idea Lab";
       const labUrl = window.location.origin + window.location.pathname + "#" + lab.id;
       copyText = button.hasAttribute("data-copy-lab-agent")
         ? 'Read and understand this PowerShell 7 Idea Lab: "' + labTitle + '"\n' + labUrl + "\n\nHelp me extend, adapt, or automate it."
