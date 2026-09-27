@@ -92,3 +92,8 @@
 .lab-card[hidden] { display:none; }
 .copy-button.is-copied { border-color:#286d55; color:#9ce6b9; background:#10271f; }
 @media (max-width:620px) { .lab-filter-controls { grid-template-columns:1fr; gap:10px; } .lab-search input,.lab-topic-filter select { min-height:44px; } }
+
+/* Keep the brand heading available to assistive technology when the graphic leads. */
+.idea-lab-visually-hidden { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+.idea-lab-summary { max-width:900px; margin:0 auto; padding:24px 0 2px; color:var(--muted); font-size:1.06rem; line-height:1.65; }
+.idea-lab-summary p { margin:0; }
