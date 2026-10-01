@@ -601,7 +601,7 @@
   </div>
   <p class="lab-detail__intro">AI found the scenario, created the prompt and runner, generated the PowerShell, ran it, and validated the result.</p>
   <div class="lab-detail__grid">
-    <section class="lab-panel lab-panel--prompt"><div class="lab-panel__heading"><h4>1. The Prompt AI Created for This Idea</h4><button class="copy-button" type="button" data-copy-target="prompt-lab-2026-10-01-0300-custom-context-prompt">Copy</button></div><p class="lab-panel__intro">After finding the scenario, AI turned it into the concise prompt used to generate the PowerShell.</p><pre id="prompt-lab-2026-10-01-0300-custom-context-prompt"><code>Create a PowerShell 7 function that formats a one-line prompt from supplied project, branch, and dirty-state values. Show a fictional example and keep it read-only: do not inspect or change the current shell, profile, or host.</code></pre></section>
+    <section class="lab-panel lab-panel--prompt"><div class="lab-panel__heading"><h4>1. The Prompt AI Created for This Idea</h4><button class="copy-button" type="button" data-copy-target="prompt-lab-2026-10-01-0300-custom-context-prompt">Copy</button></div><p class="lab-panel__intro">After finding the scenario, AI turned it into the concise prompt used to generate the PowerShell.</p><pre id="prompt-lab-2026-10-01-0300-custom-context-prompt"><code>Create a PowerShell 7 script that formats a one-line prompt from supplied project, branch, and dirty-state values. Show a fictional example and keep it read-only: do not inspect or change the current shell, profile, or host.</code></pre></section>
     <section class="lab-panel"><div class="lab-panel__heading"><h4>2. The Runner AI Created</h4><button class="copy-button" type="button" data-copy-target="runner-lab-2026-10-01-0300-custom-context-prompt">Copy</button></div><p class="lab-panel__intro">AI created run.ps1 to prepare sample data, pass parameters, and invoke the generated PowerShell.</p><pre id="runner-lab-2026-10-01-0300-custom-context-prompt"><code># Passes fictional context to the generated formatter.
 $solutionPath = Join-Path $PSScriptRoot &#39;solution.ps1&#39;
 # Prints the formatted line returned by the solution.
@@ -738,10 +738,10 @@ $summary = $tastings | Group-Object Roast | ForEach-Object {
         TastingCount = $_.Count
     }
 } | Sort-Object @{ Expression = &#39;AverageScore&#39;; Descending = $true }, @{ Expression = &#39;Roast&#39;; Descending = $false }
-# Creates a summary sheet with a chart and score color scale.
-$summary | Export-Excel -Path $OutputPath -WorksheetName &#39;Roast Summary&#39; -AutoSize -BoldTopRow -FreezeTopRow -TableName &#39;RoastSummary&#39; -ConditionalFormat @{ AverageScore = &#39;ThreeColorScale&#39; } -ExcelChartDefinition @{
-    ChartType = &#39;Bar&#39;; Title = &#39;Average Roast Score&#39;; XRange = &#39;Roast&#39;; YRange = &#39;AverageScore&#39;; Width = 18; Height = 10
-}
+# Creates a chart definition explicitly so workbook export receives a valid chart object.
+$chart = New-ExcelChartDefinition -ChartType BarClustered -XRange Roast -YRange AverageScore -Title &#39;Average Roast Score&#39; -NoLegend
+# Creates a summary sheet with the chart and score color scale.
+$summary | Export-Excel -Path $OutputPath -WorksheetName &#39;Roast Summary&#39; -AutoSize -BoldTopRow -FreezeTopRow -TableName &#39;RoastSummary&#39; -ConditionalFormat @{ AverageScore = &#39;ThreeColorScale&#39; } -ExcelChartDefinition $chart
 # Adds the fictional tasting records as a separate inspectable worksheet.
 $tastings | Export-Excel -Path $OutputPath -WorksheetName &#39;Tasting Notes&#39; -AutoSize -BoldTopRow -FreezeTopRow -TableName &#39;TastingNotes&#39; -Append
 # Reports the requested path without opening or changing other files.
