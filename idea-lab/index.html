@@ -68,9 +68,9 @@
   <span class="lab-card__link">Open the lab <span aria-hidden="true">↗</span></span>
 </a>
 <a class="lab-card reveal is-visible" href="#lab-2026-10-05-0308-coffee-blends-that-bring-them-back">
-<div class="lab-card__top"><span class="lab-card__number">03</span><span class="lab-card__status">Review only</span></div>
+<div class="lab-card__top"><span class="lab-card__number">03</span><span class="lab-card__status">Passed</span></div>
   <p class="lab-date">2026-10-05</p>
-  <h3>Find the Coffee Blends That Bring People Back</h3><p>Four fictional coffee blends. A month of made-up orders. One workbook that shows which roasts earn repeat purchases and how much revenue they bring in.</p>
+  <h3>Find the Coffee Blends That Bring People Back</h3><p>Three fictional coffee blends. Six made-up orders. One workbook that shows which roasts earn repeat purchases and how much revenue they bring in.</p>
   <div class="lab-tags"><span>PowerShell</span><span>ImportExcel</span><span>Excel</span><span>Data analysis</span></div>
   <span class="lab-card__link">Open the lab <span aria-hidden="true">↗</span></span>
 </a>
@@ -9750,7 +9750,7 @@ EXIT STATUS: 0
 </dl></div></div></details>
 </article>
 <article id="lab-2026-10-05-0308-coffee-blends-that-bring-them-back" class="lab-detail reveal is-visible">
-  <div class="lab-detail__header"><div><p class="eyebrow">Lab · 2026-10-05</p><h3><a class="lab-title-link" href="#lab-2026-10-05-0308-coffee-blends-that-bring-them-back" aria-label="Permalink to Find the Coffee Blends That Bring People Back">Find the Coffee Blends That Bring People Back<span class="lab-title-link__icon" aria-hidden="true">↗</span></a></h3><p>Four fictional coffee blends. A month of made-up orders. One workbook that shows which roasts earn repeat purchases and how much revenue they bring in.</p></div><span class="lab-detail__badge">Review only</span></div>
+  <div class="lab-detail__header"><div><p class="eyebrow">Lab · 2026-10-05</p><h3><a class="lab-title-link" href="#lab-2026-10-05-0308-coffee-blends-that-bring-them-back" aria-label="Permalink to Find the Coffee Blends That Bring People Back">Find the Coffee Blends That Bring People Back<span class="lab-title-link__icon" aria-hidden="true">↗</span></a></h3><p>Three fictional coffee blends. Six made-up orders. One workbook that shows which roasts earn repeat purchases and how much revenue they bring in.</p></div><span class="lab-detail__badge">Passed with warnings</span></div>
   <div class="lab-detail__actions" aria-label="PowerShell lab sharing tools">
     <span class="lab-detail__technology">PowerShell 7 implementation</span>
     <button class="lab-share-button" type="button" data-copy-lab-link aria-label="Copy link to this PowerShell lab">Copy lab link</button>
@@ -9834,31 +9834,42 @@ $summary
 </code></pre></section>
   </div>
   <details class="lab-output"><summary>4. What Happened When It Ran</summary><p class="lab-output__intro">Captured output, errors, and exit status.</p><div class="lab-output__content"><pre><code>PowerShell version: 7.6.6
-Command: pwsh -NoProfile -File ./run.ps1
+ImportExcel version: 7.8.10
+Command: pwsh -NoProfile -NonInteractive -File ./run.ps1
 
 === STDOUT ===
-(empty)
+WARNING: ImportExcel Module Cannot Autosize. Please run the following command to install dependencies:
+apt-get -y update &amp;&amp; apt-get install -y --no-install-recommends libgdiplus libc6-dev
+WARNING: Auto-fitting columns is not available with this OS configuration.
+WARNING: Auto-fitting columns is not available with this OS configuration.
+
+Blend        Orders Customers RepeatOrders RepeatRate Revenue
+-----        ------ --------- ------------ ---------- -------
+Citrus Trail      2         2            1       0.50   52.00
+Harbor Light      2         2            1       0.50   43.50
+Night Shift       2         2            1       0.50   32.00
+
+Workbook: &lt;lab folder&gt;/coffee-repeat-rates.xlsx
+Status: passed
 
 === STDERR ===
-Import-Module: &lt;lab folder&gt;/run.ps1:3
-Line |
-   3 |  Import-Module ImportExcel -ErrorAction Stop
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | The specified module &#39;ImportExcel&#39; was not loaded because no valid
-     | module file was found in any module directory.
+(empty)
+
 === EXIT STATUS ===
-1
+0
 </code></pre></div></details>
   <details class="lab-output lab-validation"><summary>5. Validation Performed by the AI Workflow</summary><p class="lab-output__intro">Runtime, expected results, and safety boundaries checked and recorded.</p><div class="lab-validation__body"><div class="validation-card">
-<div class="validation-card__status"><span>Validation status</span><strong>Review only</strong></div>
+<div class="validation-card__status"><span>Validation status</span><strong>Passed with warnings</strong></div>
 <dl class="validation-card__facts">
-<div><dt>Runtime</dt><dd>PowerShell 7.6.6  </dd></div>
-<div><dt>Command</dt><dd><code>pwsh -NoProfile -File ./run.ps1</code></dd></div>
-<div><dt>Exit status</dt><dd>1</dd></div>
-<div><dt>Checks</dt><dd><ul><li>PowerShell runner reached the ImportExcel module check.</li><li>The required module was unavailable, so workbook export and chart creation did not run.</li><li>No workbook was created and no successful workbook output is claimed.</li></ul></dd></div>
-<div><dt>Safety</dt><dd>The sample orders are fictional and held in memory. The intended implementation writes only the workbook in this lab folder. It does not open Excel, access credentials, alter system settings, or call a network endpoint. Installation and actual workbook validation remain review-only because the runtime could not obtain the module.</dd></div>
-<div><dt>ImportExcel</dt><dd>ImportExcel 7.8.10 is the target version from its current module metadata; it was not installed in this cloud runtime.</dd></div>
-</dl></div></div></details>
+<div><dt>Runtime</dt><dd>PowerShell 7.6.6</dd></div>
+<div><dt>ImportExcel</dt><dd>7.8.10 loaded successfully</dd></div>
+<div><dt>Command</dt><dd><code>pwsh -NoProfile -NonInteractive -File ./run.ps1</code></dd></div>
+<div><dt>Exit status</dt><dd>0</dd></div>
+<div><dt>Retested</dt><dd>2026-10-05</dd></div>
+<div><dt>Checks</dt><dd><ul><li>Runner completed and created the workbook in a fresh lab folder.</li><li>Reopened and verified Orders and Blend Summary worksheets.</li><li>Verified six orders, three blends, two tables, and one chart.</li><li>All repeat rates are 0.50; revenues are 52.00, 43.50, and 32.00 in blend-name order.</li><li>Both PowerShell files passed parser checks; standard error was empty.</li></ul></dd></div>
+<div><dt>Warnings</dt><dd>Automatic column sizing is unavailable in this Linux runtime. Workbook creation, tables, chart, and calculated values passed. Column widths may need adjustment locally.</dd></div>
+<div><dt>Safety</dt><dd>Uses fictional in-memory orders and writes only the workbook beside the runner. Does not open Excel, access credentials, alter system settings, execute arbitrary input, or call a network endpoint.</dd></div>
+</dl><p>This successful retest supersedes the earlier missing-module result. The lab scripts are unchanged.</p></div></div></details>
 </article>
 <article id="lab-2026-10-05-0308-powershell-keeps-a-pocket-beat" class="lab-detail reveal is-visible">
   <div class="lab-detail__header"><div><p class="eyebrow">Lab · 2026-10-05</p><h3><a class="lab-title-link" href="#lab-2026-10-05-0308-powershell-keeps-a-pocket-beat" aria-label="Permalink to Make PowerShell Keep a Pocket Beat">Make PowerShell Keep a Pocket Beat<span class="lab-title-link__icon" aria-hidden="true">↗</span></a></h3><p>A tiny four-on-the-floor drum machine, built from arrays and a seeded random groove. No audio package, no download, just a lively 16-step pattern printed in your terminal.</p></div><span class="lab-detail__badge">Validated</span></div>
