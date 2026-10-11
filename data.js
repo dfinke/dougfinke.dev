@@ -6,7 +6,7 @@ window.TOOLS = [
     "status": "live",
     "repo": "dfinke/ImportExcel",
     "stars": 2748,
-    "forks": 413,
+    "forks": 414,
     "language": "PowerShell",
     "updated": "2026-08-22",
     "oneLiner": "Import and export Excel spreadsheets from PowerShell without requiring Excel.",
