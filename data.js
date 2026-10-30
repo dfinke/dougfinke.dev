@@ -36,7 +36,7 @@ window.TOOLS = [
     "status": "live",
     "repo": "dfinke/PSAI",
     "stars": 276,
-    "forks": 37,
+    "forks": 36,
     "language": "PowerShell",
     "updated": "2026-03-22",
     "oneLiner": "PowerShell-native AI agents and multi-agent orchestration.",
