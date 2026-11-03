@@ -36,6 +36,16 @@
     <meta name="twitter:image" content="https://dougfinke.dev/assets/bioPic-2026.png" />
     <link rel="preconnect" href="https://unpkg.com" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="blog-theme.css" />
+    <script>
+      (function () {
+        var saved = null;
+        try { saved = localStorage.getItem('dfinke-theme'); } catch (error) {}
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', saved === 'dark' || saved === 'light' ? saved : (prefersDark ? 'dark' : 'light'));
+      })();
+    </script>
+    <script defer src="theme-toggle.js"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -221,57 +231,22 @@
   <body>
     <a class="skip-link" href="#tools">Skip to tools</a>
 
-    <header class="mobile-header">
-      <a class="mobile-avatar" href="#top" aria-label="Doug Finke home">
-        <img src="assets/bioPic-2026.png" alt="Doug Finke" />
-      </a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
-        <i data-lucide="menu" aria-hidden="true"></i>
-        <span>Menu</span>
-      </button>
-    </header>
-
-    <aside class="side-nav" id="site-nav" aria-label="Primary navigation">
-      <a class="profile-lockup" href="#top">
-        <img class="avatar" src="assets/bioPic-2026.png" alt="Doug Finke" />
-        <span>
-          <strong>Doug Finke</strong>
-          <small>AI, agents, automation</small>
-        </span>
-      </a>
-
-      <nav class="nav-links">
-        <a href="#tools" data-nav-link>
-          <i data-lucide="layout-grid" aria-hidden="true"></i>
-          <span>Tools</span>
-        </a>
-        <a href="idea-lab/" data-nav-link>
-          <i data-lucide="flask-conical" aria-hidden="true"></i>
-          <span>Idea Lab</span>
-        </a>
-
-        <a href="#archive" data-nav-link>
-          <i data-lucide="archive" aria-hidden="true"></i>
-          <span>Archive</span>
-        </a>
-        <a href="#about" data-nav-link>
-          <i data-lucide="user-round" aria-hidden="true"></i>
-          <span>About</span>
-        </a>
-        <a href="#work" data-nav-link>
-          <i data-lucide="briefcase-business" aria-hidden="true"></i>
-          <span>Work</span>
-        </a>
-      </nav>
-
-      <div class="nav-footer">
-        <p>Researching the optimal; implementing the practical.</p>
-        <div class="nav-actions">
-          <a class="nav-action-link" href="https://github.com/dfinke" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="nav-action-button" href="#tools">Explore</a>
-        </div>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-title" href="https://dfinke.github.io/" aria-label="Doug Finke blog"><span class="brand-mark" aria-hidden="true">&gt;_</span><span>Doug Finke<span class="brand-subtitle">Agentic AI Forge</span></span></a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav class="forge-nav" id="site-nav" aria-label="Main navigation">
+          <a href="https://dfinke.github.io/">Blog</a>
+          <a href="#tools" data-nav-link aria-current="page">Tools</a>
+          <a href="idea-lab/" data-nav-link>Idea Lab</a>
+          <a href="#archive" data-nav-link>Archive</a>
+          <a href="#about" data-nav-link>About</a>
+          <a href="#work" data-nav-link>Work</a>
+          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span aria-hidden="true">◐</span><span class="sr-only theme-toggle__text">Light</span></button>
+          <a class="button nav-forge" href="https://www.skool.com/agentic-ai-forge" target="_blank" rel="noopener noreferrer">Explore the Forge <span aria-hidden="true">↗</span></a>
+        </nav>
       </div>
-    </aside>
+    </header>
 
     <main class="site-shell" id="top">
       <section class="intro-section reveal">
@@ -461,7 +436,3 @@ Invoke-PSClaudeCode -Task "Create a report from these logs"</code></pre>
     <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
