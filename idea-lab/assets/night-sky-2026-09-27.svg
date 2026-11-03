@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101a44"/>
+      <stop offset="55%" stop-color="#263d73"/>
+      <stop offset="100%" stop-color="#572f65"/>
+    </linearGradient>
+    <radialGradient id="moonGlow">
+      <stop offset="0%" stop-color="#fff8cf" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#fff8cf" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#sky)"/>
+  <circle cx="575" cy="105" r="90" fill="url(#moonGlow)"/>
+  <circle cx="575" cy="105" r="34" fill="#fff3b0"/>
+  <circle cx="481" cy="143" r="1.33" fill="#f4f7ff" opacity="0.73"/>
+<circle cx="253" cy="331" r="1.49" fill="#f4f7ff" opacity="0.36"/>
+<circle cx="181" cy="225" r="1.49" fill="#f4f7ff" opacity="0.6"/>
+<circle cx="103" cy="219" r="1.16" fill="#f4f7ff" opacity="0.61"/>
+<circle cx="290" cy="75" r="0.78" fill="#f4f7ff" opacity="0.76"/>
+<circle cx="673" cy="277" r="0.92" fill="#f4f7ff" opacity="0.66"/>
+<circle cx="72" cy="286" r="1.56" fill="#f4f7ff" opacity="0.78"/>
+<circle cx="218" cy="34" r="1.32" fill="#f4f7ff" opacity="0.57"/>
+<circle cx="202" cy="66" r="1.47" fill="#f4f7ff" opacity="0.66"/>
+<circle cx="348" cy="285" r="1.61" fill="#f4f7ff" opacity="0.49"/>
+<circle cx="88" cy="342" r="0.72" fill="#f4f7ff" opacity="0.82"/>
+<circle cx="657" cy="161" r="0.49" fill="#f4f7ff" opacity="0.37"/>
+<circle cx="481" cy="193" r="0.68" fill="#f4f7ff" opacity="0.75"/>
+<circle cx="665" cy="100" r="1.03" fill="#f4f7ff" opacity="0.35"/>
+<circle cx="689" cy="40" r="1.32" fill="#f4f7ff" opacity="0.71"/>
+<circle cx="43" cy="381" r="1.49" fill="#f4f7ff" opacity="0.46"/>
+<circle cx="652" cy="144" r="0.67" fill="#f4f7ff" opacity="0.9"/>
+<circle cx="574" cy="384" r="1.89" fill="#f4f7ff" opacity="0.74"/>
+<circle cx="255" cy="19" r="1.35" fill="#f4f7ff" opacity="0.41"/>
+<circle cx="332" cy="207" r="1.33" fill="#f4f7ff" opacity="0.74"/>
+<circle cx="455" cy="302" r="0.56" fill="#f4f7ff" opacity="0.81"/>
+<circle cx="608" cy="361" r="1.07" fill="#f4f7ff" opacity="0.38"/>
+<circle cx="504" cy="289" r="1.26" fill="#f4f7ff" opacity="0.58"/>
+<circle cx="71" cy="77" r="0.71" fill="#f4f7ff" opacity="0.44"/>
+<circle cx="96" cy="24" r="1.79" fill="#f4f7ff" opacity="0.68"/>
+<circle cx="151" cy="41" r="0.74" fill="#f4f7ff" opacity="0.75"/>
+<circle cx="334" cy="203" r="0.96" fill="#f4f7ff" opacity="0.87"/>
+<circle cx="416" cy="132" r="1.22" fill="#f4f7ff" opacity="0.62"/>
+<circle cx="320" cy="369" r="0.41" fill="#f4f7ff" opacity="0.51"/>
+<circle cx="591" cy="361" r="0.89" fill="#f4f7ff" opacity="0.37"/>
+<circle cx="624" cy="65" r="0.82" fill="#f4f7ff" opacity="0.41"/>
+<circle cx="275" cy="238" r="1.34" fill="#f4f7ff" opacity="0.45"/>
+<circle cx="565" cy="199" r="0.41" fill="#f4f7ff" opacity="0.59"/>
+<circle cx="406" cy="23" r="1.17" fill="#f4f7ff" opacity="0.67"/>
+<circle cx="369" cy="161" r="0.96" fill="#f4f7ff" opacity="0.56"/>
+<circle cx="370" cy="213" r="1.1" fill="#f4f7ff" opacity="0.58"/>
+<circle cx="127" cy="49" r="1.87" fill="#f4f7ff" opacity="0.44"/>
+<circle cx="121" cy="368" r="0.88" fill="#f4f7ff" opacity="0.47"/>
+<circle cx="492" cy="360" r="1.47" fill="#f4f7ff" opacity="0.39"/>
+<circle cx="552" cy="61" r="0.93" fill="#f4f7ff" opacity="0.84"/>
+<circle cx="604" cy="88" r="0.61" fill="#f4f7ff" opacity="0.41"/>
+<circle cx="221" cy="58" r="1.78" fill="#f4f7ff" opacity="0.58"/>
+<circle cx="292" cy="184" r="1.58" fill="#f4f7ff" opacity="0.6"/>
+<circle cx="372" cy="383" r="1.18" fill="#f4f7ff" opacity="0.56"/>
+<circle cx="467" cy="354" r="1.82" fill="#f4f7ff" opacity="0.51"/>
+<circle cx="424" cy="193" r="0.46" fill="#f4f7ff" opacity="0.84"/>
+<circle cx="121" cy="318" r="1.51" fill="#f4f7ff" opacity="0.72"/>
+<circle cx="224" cy="187" r="1.59" fill="#f4f7ff" opacity="0.57"/>
+<circle cx="33" cy="203" r="1.19" fill="#f4f7ff" opacity="0.53"/>
+<circle cx="270" cy="155" r="0.57" fill="#f4f7ff" opacity="0.38"/>
+<circle cx="132" cy="231" r="1.55" fill="#f4f7ff" opacity="0.75"/>
+<circle cx="101" cy="349" r="1.46" fill="#f4f7ff" opacity="0.76"/>
+<circle cx="268" cy="146" r="1.02" fill="#f4f7ff" opacity="0.85"/>
+<circle cx="132" cy="40" r="0.84" fill="#f4f7ff" opacity="0.57"/>
+<circle cx="120" cy="111" r="1.84" fill="#f4f7ff" opacity="0.64"/>
+<circle cx="268" cy="109" r="0.58" fill="#f4f7ff" opacity="0.88"/>
+<circle cx="456" cy="166" r="1.06" fill="#f4f7ff" opacity="0.37"/>
+<circle cx="307" cy="91" r="0.41" fill="#f4f7ff" opacity="0.51"/>
+<circle cx="538" cy="364" r="0.58" fill="#f4f7ff" opacity="0.37"/>
+<circle cx="491" cy="139" r="1.55" fill="#f4f7ff" opacity="0.51"/>
+<circle cx="68" cy="402" r="0.87" fill="#f4f7ff" opacity="0.88"/>
+<circle cx="39" cy="358" r="0.75" fill="#f4f7ff" opacity="0.88"/>
+<circle cx="145" cy="64" r="0.67" fill="#f4f7ff" opacity="0.42"/>
+<circle cx="294" cy="246" r="1.43" fill="#f4f7ff" opacity="0.86"/>
+<circle cx="313" cy="329" r="0.52" fill="#f4f7ff" opacity="0.75"/>
+<circle cx="304" cy="276" r="0.89" fill="#f4f7ff" opacity="0.44"/>
+<circle cx="242" cy="60" r="0.62" fill="#f4f7ff" opacity="0.5"/>
+<circle cx="662" cy="115" r="1.46" fill="#f4f7ff" opacity="0.81"/>
+<circle cx="345" cy="273" r="1.07" fill="#f4f7ff" opacity="0.55"/>
+<circle cx="652" cy="77" r="1.79" fill="#f4f7ff" opacity="0.77"/>
+<circle cx="125" cy="202" r="1.67" fill="#f4f7ff" opacity="0.51"/>
+<circle cx="28" cy="360" r="1.74" fill="#f4f7ff" opacity="0.44"/>
+  <polyline points="120,275 190,230 245,270 305,205 360,230 425,160"
+fill="none" stroke="#9fe7ff" stroke-width="2" opacity="0.85"/>
+<circle cx="120" cy="275" r="4" fill="#a8e9ff"/>
+<circle cx="190" cy="230" r="4" fill="#a8e9ff"/>
+<circle cx="245" cy="270" r="4" fill="#a8e9ff"/>
+<circle cx="305" cy="205" r="4" fill="#a8e9ff"/>
+<circle cx="360" cy="230" r="4" fill="#a8e9ff"/>
+<circle cx="425" cy="160" r="4" fill="#a8e9ff"/>
+  <text x="30" y="390" fill="#dce8ff" font-family="sans-serif" font-size="16">A tiny sky, generated with PowerShell 7 · seed 2718</text>
+</svg>
