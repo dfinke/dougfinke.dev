@@ -66,7 +66,7 @@ window.TOOLS = [
     "category": "AI provider abstraction",
     "status": "live",
     "repo": "dfinke/psaisuite",
-    "stars": 102,
+    "stars": 103,
     "forks": 17,
     "language": "PowerShell",
     "updated": "2026-10-24",
