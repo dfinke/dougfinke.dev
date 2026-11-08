@@ -98,7 +98,7 @@ window.TOOLS = [
     "category": "agent workflow experiment",
     "status": "prototype",
     "repo": "dfinke/PSClaudeCode",
-    "stars": 90,
+    "stars": 89,
     "forks": 12,
     "language": "PowerShell",
     "updated": "2026-06-03",
