@@ -99,7 +99,7 @@ window.TOOLS = [
     "status": "prototype",
     "repo": "dfinke/PSClaudeCode",
     "stars": 89,
-    "forks": 12,
+    "forks": 13,
     "language": "PowerShell",
     "updated": "2026-06-03",
     "oneLiner": "A PowerShell implementation of a Claude Code-style agent loop.",
