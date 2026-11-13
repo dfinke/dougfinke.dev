@@ -5,7 +5,7 @@ window.TOOLS = [
     "category": "automation system",
     "status": "live",
     "repo": "dfinke/ImportExcel",
-    "stars": 2752,
+    "stars": 2753,
     "forks": 415,
     "language": "PowerShell",
     "updated": "2026-08-22",
